@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EventosAdversos</class>
+ <widget class="QDialog" name="EventosAdversos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>683</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Eventos Adversos</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox_eventosAdversos">
+     <property name="title">
+      <string>Eventos Adversos</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QGroupBox" name="groupBox_evento1">
+        <property name="title">
+         <string>Evento 1</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QComboBox" name="comboBox_evento1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Febre </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Calafrios </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rompimento de fibras do dialisador capilar </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Coagulação do sistema extracorpóreo </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Quebra do sistema extracorpóreo </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Defeito do material</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Uso de material inadequado</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Troca de capilares entre pacientes</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hematoma em FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ruptura de FAV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Trombose de FAV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Trombose de prótese PTFE </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Perda definitiva da FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Perda de cateter durante a hemodiálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cateter não funcionante </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Fluxo inadequado do acesso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Implante inadequado do acesso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sangramento pelo acesso venoso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Retirada acidental de agulha de FAV ou cateter </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Desconexão acidental do cateter com a linha de sangue </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Desconexão acidental da agulha da FAV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hemodiálise interrompida ou finalizada devido mal funcionamento e/ou baixo fluxo do acesso vascular</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Queda do paciente</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a esterilizante (ácido peracético) </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a transfusão de hemoderivados</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a medicamentos </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a curativos </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lesão de pele </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Evasão, recusa ou abandono do tratamento </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Erro de medicação </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Erro de prescrição de diálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Omissão de cuidado </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Relacionados ao tratamento de água/ falha na distribuição  </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Relacionados a máquina de hemodiálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Outros (identificar)</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_evento1"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_evento2">
+        <property name="title">
+         <string>Evento 2</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QComboBox" name="comboBox_evento2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Febre </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Calafrios </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rompimento de fibras do dialisador capilar </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Coagulação do sistema extracorpóreo </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Quebra do sistema extracorpóreo </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Defeito do material</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Uso de material inadequado</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Troca de capilares entre pacientes</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hematoma em FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ruptura de FAV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Trombose de FAV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Trombose de prótese PTFE </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Perda definitiva da FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Perda de cateter durante a hemodiálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cateter não funcionante </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Fluxo inadequado do acesso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Implante inadequado do acesso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sangramento pelo acesso venoso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Retirada acidental de agulha de FAV ou cateter </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Desconexão acidental do cateter com a linha de sangue </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Desconexão acidental da agulha da FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hemodiálise interrompida ou finalizada devido mal funcionamento e/ou baixo fluxo do acesso vascular</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Queda do paciente</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a esterilizante (ácido peracético) </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a transfusão de hemoderivados</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a medicamentos </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a curativos </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lesão de pele </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Evasão, recusa ou abandono do tratamento </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Erro de medicação </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Erro de prescrição de diálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Omissão de cuidado </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Relacionados ao tratamento de água/ falha na distribuição  </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Relacionados a máquina de hemodiálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Outros (identificar)</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_evento2"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_evento3">
+        <property name="title">
+         <string>Evento 3</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QComboBox" name="comboBox_evento3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Febre </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Calafrios </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rompimento de fibras do dialisador capilar </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Coagulação do sistema extracorpóreo </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Quebra do sistema extracorpóreo </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Defeito do material</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Uso de material inadequado</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Troca de capilares entre pacientes</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hematoma em FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ruptura de FAV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Trombose de FAV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Trombose de prótese PTFE </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Perda definitiva da FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Perda de cateter durante a hemodiálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cateter não funcionante </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Fluxo inadequado do acesso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Implante inadequado do acesso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sangramento pelo acesso venoso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Retirada acidental de agulha de FAV ou cateter </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Desconexão acidental do cateter com a linha de sangue </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Desconexão acidental da agulha da FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hemodiálise interrompida ou finalizada devido mal funcionamento e/ou baixo fluxo do acesso vascular</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Queda do paciente</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a esterilizante (ácido peracético) </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a transfusão de hemoderivados</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a medicamentos </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a curativos </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lesão de pele </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Evasão, recusa ou abandono do tratamento </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Erro de medicação </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Erro de prescrição de diálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Omissão de cuidado </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Relacionados ao tratamento de água/ falha na distribuição  </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Relacionados a máquina de hemodiálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Outros (identificar)</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_evento3"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_evento4">
+        <property name="title">
+         <string>Evento 4</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QComboBox" name="comboBox_evento4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Febre </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Calafrios </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rompimento de fibras do dialisador capilar </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Coagulação do sistema extracorpóreo </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Quebra do sistema extracorpóreo </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Defeito do material</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Uso de material inadequado</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Troca de capilares entre pacientes</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hematoma em FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ruptura de FAV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Trombose de FAV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Trombose de prótese PTFE </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Perda definitiva da FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Perda de cateter durante a hemodiálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cateter não funcionante </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Fluxo inadequado do acesso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Implante inadequado do acesso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sangramento pelo acesso venoso </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Retirada acidental de agulha de FAV ou cateter </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Desconexão acidental do cateter com a linha de sangue </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Desconexão acidental da agulha da FAV </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hemodiálise interrompida ou finalizada devido mal funcionamento e/ou baixo fluxo do acesso vascular</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Queda do paciente</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a esterilizante (ácido peracético) </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a transfusão de hemoderivados</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a medicamentos </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Reação a curativos </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lesão de pele </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Evasão, recusa ou abandono do tratamento </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Erro de medicação </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Erro de prescrição de diálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Omissão de cuidado </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Relacionados ao tratamento de água/ falha na distribuição  </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Relacionados a máquina de hemodiálise </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Outros (identificar)</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_evento4"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_confirmar">
+          <property name="text">
+           <string>Confirmar</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_cancelar">
+          <property name="text">
+           <string>Cancelar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

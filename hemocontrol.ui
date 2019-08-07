@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>hemoControl</class>
+ <widget class="QMainWindow" name="hemoControl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SAHD</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_logoMenu">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../logo.jpg</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnListPascientes">
+        <property name="text">
+         <string>Consultar Pascientes</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="registerButton">
+        <property name="text">
+         <string>Cadastrar Paciente</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="AttButton">
+        <property name="text">
+         <string>Atualizar Dados</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="SairButton">
+        <property name="text">
+         <string>Sair</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuInicio">
+    <property name="title">
+     <string>Inicio</string>
+    </property>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuSobre">
+    <property name="title">
+     <string>Sobre</string>
+    </property>
+    <addaction name="actionInformacoes"/>
+   </widget>
+   <addaction name="menuInicio"/>
+   <addaction name="menuSobre"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionInformacoes"/>
+   <addaction name="actionSair"/>
+   <addaction name="actionAdicionar_Usu_rio"/>
+   <addaction name="actionConsultar_Usu_rio"/>
+  </widget>
+  <action name="actionSair">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/Icons/Resources/icons/disconnect.png</normaloff>:/Icons/Resources/icons/disconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="actionInformacoes">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/Icons/Resources/icons/information.png</normaloff>:/Icons/Resources/icons/information.png</iconset>
+   </property>
+   <property name="text">
+    <string>Informações</string>
+   </property>
+  </action>
+  <action name="actionAdicionar_Usu_rio">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/Icons/Resources/icons/add.png</normaloff>:/Icons/Resources/icons/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Adicionar Usuário</string>
+   </property>
+  </action>
+  <action name="actionConsultar_Usu_rio">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/Icons/Resources/icons/find.png</normaloff>:/Icons/Resources/icons/find.png</iconset>
+   </property>
+   <property name="text">
+    <string>Consultar Usuário</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

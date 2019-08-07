@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Cadastro</class>
+ <widget class="QDialog" name="Cadastro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1275</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastro de Paciente</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_8">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Dados Cadastrais</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="cadNome">
+        <property name="text">
+         <string>Nome</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineNome</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineNome"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="cadNascimento">
+        <property name="text">
+         <string>Data de Nascimento</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QDateEdit" name="lineNascimento"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="cadCPF">
+        <property name="text">
+         <string>CPF</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineCPF</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineCPF"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="cadRG">
+        <property name="text">
+         <string>RG</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineRG</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineRG"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="cadRegistroHospitalar">
+        <property name="text">
+         <string>Registro Hospitalar</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineRegistroHospitalar</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineRegistroHospitalar"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="cadCNS">
+        <property name="text">
+         <string>CNS</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineCNS</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineCNS"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="cadProcedencia">
+        <property name="text">
+         <string>Procedência</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineProcedencia</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="lineProcedencia"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="cadNaturalidade">
+        <property name="text">
+         <string>Naturalidade</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineNaturalidade</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="lineNaturalidade"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="cadCor">
+        <property name="text">
+         <string>Cor</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QComboBox" name="comboBox">
+        <item>
+         <property name="text">
+          <string>Branca</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Preta</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Parda</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amarela</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Indigena</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sem autodeclaração</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="cadEndereco">
+        <property name="text">
+         <string>Endereço</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEndereco</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLineEdit" name="lineEndereco"/>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="cadNomeMae">
+        <property name="text">
+         <string>Nome da Mãe</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineNomeMae</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLineEdit" name="lineNomeMae"/>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="cadResponsavelLegal">
+        <property name="text">
+         <string>Responsável Legal</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineResponsavelLegal</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QLineEdit" name="lineResponsavelLegal"/>
+      </item>
+      <item row="12" column="0">
+       <widget class="QLabel" name="cadTelefoneFixo">
+        <property name="text">
+         <string>Telefone Fixo</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineTelefoneFixo</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="QLineEdit" name="lineTelefoneFixo"/>
+      </item>
+      <item row="13" column="0">
+       <widget class="QLabel" name="cadCelular">
+        <property name="text">
+         <string>Celular</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineCelular</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="QLineEdit" name="lineCelular"/>
+      </item>
+      <item row="14" column="0">
+       <widget class="QLabel" name="cadEmail">
+        <property name="text">
+         <string>E-mail</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEmail</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="QLineEdit" name="lineEmail"/>
+      </item>
+      <item row="15" column="0">
+       <widget class="QLabel" name="cadCadastroCNCDO">
+        <property name="text">
+         <string>Cadastro no CNCDO</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineCNCDO</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QCheckBox" name="checkCNCDO">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineCNCDO"/>
+        </item>
+       </layout>
+      </item>
+      <item row="16" column="0">
+       <widget class="QLabel" name="label_historiaClinica">
+        <property name="text">
+         <string>História Clinica</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="1">
+       <widget class="QTextEdit" name="txtHistorico">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_InformacoesSobreADoenca">
+     <property name="title">
+      <string>Informações Sobre a Doença</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGroupBox" name="groupBox_DoencaRenalCronica">
+        <property name="title">
+         <string>Doença Renal Crônica</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QCheckBox" name="checkBox_doencaRenalCronica">
+             <property name="text">
+              <string>Sim</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="line_doencaRenalCronica"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_DoencaDeBase">
+        <property name="title">
+         <string>Doença de Base</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="2" column="1">
+            <widget class="QCheckBox" name="checkBox_hepatorrenal">
+             <property name="text">
+              <string>Hepatorrenal</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBox_cardiorrenal">
+             <property name="text">
+              <string>Cardiorrenal</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_nefropatiaDiabetica">
+             <property name="text">
+              <string>Nefropatia Diabética</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBox_glomerulopatias">
+             <property name="text">
+              <string>Glomerulopatias</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QCheckBox" name="checkBox_doencaUrologica">
+             <property name="text">
+              <string>Doença Urológica</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QCheckBox" name="checkBox_sindromeNefrotica">
+             <property name="text">
+              <string>Síndrome Nefrótica</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_nefroescleroseHipertensiva">
+             <property name="text">
+              <string>Nefroesclerose Hipertensiva</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_doencaCronicaDoEnxerto">
+             <property name="text">
+              <string>Doença Crônica do Enxerto</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QCheckBox" name="checkBox_lupusEritemasoSistemico">
+             <property name="text">
+              <string>Lúpus Eritemaso Sistêmico</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="checkBox_mieloma">
+             <property name="text">
+              <string>Causas Obstrutivas (Mieloma)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="checkBox_doencaPolicistica">
+             <property name="text">
+              <string>Doença Policística</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QCheckBox" name="checkBox_malFormacaoCongenita">
+             <property name="text">
+              <string>Mal Formação Congênita</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QCheckBox" name="checkBox_naoSeAplica">
+             <property name="text">
+              <string>Não se Aplica</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_InsuficienciaRenalAguda">
+        <property name="title">
+         <string>Insuficiência Renal Aguda</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QCheckBox" name="checkBox_insuficienciaRenalAguda">
+             <property name="text">
+              <string>Sim</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDateEdit" name="dateEdit_insuficienciaRenalAguda"/>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_GrupoSanguineoFatorRh">
+        <property name="title">
+         <string>Grupo Sanguíneo / Fator Rh</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QComboBox" name="comboBox_GrupoSanguineo">
+           <item>
+            <property name="text">
+             <string>A</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>B</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>AB</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>O</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_FatorRh">
+           <item>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_Alergias">
+        <property name="title">
+         <string>Alergias</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_medicamentos">
+           <property name="text">
+            <string>Medicamento</string>
+           </property>
+           <property name="buddy">
+            <cstring>lineEdit_medicamentos</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QCheckBox" name="checkBox_medicamentos">
+             <property name="text">
+              <string>Sim</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_medicamentos"/>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_curativos">
+           <property name="text">
+            <string>Curativos</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_curativos_transpore">
+             <property name="text">
+              <string>Transpore</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_curativos_micropore">
+             <property name="text">
+              <string>Micropore</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_curativos_filmeTransparente">
+             <property name="text">
+              <string>Filme Transparente</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <layout class="QFormLayout" name="formLayout_3">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="checkBox_curativos_outro">
+               <property name="text">
+                <string>Outro</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_curativos_outro"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_hemocomponentes">
+           <property name="text">
+            <string>Hemocomponentes</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_hemocomponentes_concentradoDePlaquetas">
+             <property name="text">
+              <string>Concetrado de Plaquetas</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_hemocomponentes_concentradoDeHemacias">
+             <property name="text">
+              <string>Concentrado de Hemácias</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_hemocomponentes_plasma">
+             <property name="text">
+              <string>Plasma </string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="BotaoConfirmarCadastro">
+          <property name="text">
+           <string>Confirmar</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="BotaoCancelarCadastro">
+          <property name="text">
+           <string>Cancelar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>Resources/icons/add.png</file>
+        <file>Resources/icons/cross.png</file>
+        <file>Resources/icons/delete.png</file>
+        <file>Resources/icons/disconnect.png</file>
+        <file>Resources/icons/exclamation.png</file>
+        <file>Resources/icons/find.png</file>
+        <file>Resources/icons/information.png</file>
+    </qresource>
+    <qresource prefix="/logo">
+        <file>Resources/logoRim.png</file>
+    </qresource>
+</RCC>

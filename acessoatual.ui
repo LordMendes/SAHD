@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AcessoAtual</class>
+ <widget class="QDialog" name="AcessoAtual">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>423</width>
+    <height>432</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Acesso Atual</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>390</y>
+     <width>242</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_Confirmar">
+      <property name="text">
+       <string>Confirmar</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_Cancelar">
+      <property name="text">
+       <string>Cancelar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_AcessoAtual">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>11</y>
+     <width>391</width>
+     <height>378</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Acesso Atual</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QGroupBox" name="groupBox_cateterDuploLumen">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="title">
+       <string>Cateter duplo lúmen</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_localCateterDuploLumen">
+         <property name="text">
+          <string>Local</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="comboBox_localCateterDuploLumen">
+         <item>
+          <property name="text">
+           <string>VJiD - Veia Jugular Interna Direita</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VJiE - Veia Jugular Interna Esquerda</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VSD - Veia Subclávia Direita</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VSE - Veia Subclávia Esquerda</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VFD - Veia Femoral Direita</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VFE - Veia Femoral Esquerda</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_cateterDeLongaPermanncia">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="title">
+       <string>Cateter de longa permanência</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <layout class="QFormLayout" name="formLayout_6">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_localCateterDeLongaPermanencia">
+         <property name="text">
+          <string>Local</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="comboBox_localCateterDeLongaPermanencia">
+         <item>
+          <property name="text">
+           <string>VJiD - Veia Jugular Interna Direita</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VJiE - Veia Jugular Interna Esquerda</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VSD - Veia Subclávia Direita</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VSE - Veia Subclávia Esquerda</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VFD - Veia Femoral Direita</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VFE - Veia Femoral Esquerda</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_cateterDeLongaPermanenciaTransHepaticoPercutaneo">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="title">
+       <string>Cateter de longa permanência trans-hepático percutâneo </string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <layout class="QFormLayout" name="formLayout_7">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_localCateterDeLongaPermanenciaTransHepaticoPercutaneo">
+         <property name="text">
+          <string>Local</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="comboBox_localCateterDeLongaPermanenciaTransHepaticoPercutaneo">
+         <item>
+          <property name="text">
+           <string>VHD - Veia Hepática Direita</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>VHM - Veia Hepática Esquerda</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_fistulaArterioVenosa">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="title">
+       <string>Fístula arteriovenosa </string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <layout class="QFormLayout" name="formLayout_8">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_localFistulaArterioVenosa">
+         <property name="text">
+          <string>Local</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="comboBox_localFistulaArterioVenosa">
+         <item>
+          <property name="text">
+           <string>Braquibasílica</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Braquiocefálica</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Femural</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Radiocefálica</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ulnar-basílica</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_proteseEnxertoDePTFE">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="title">
+       <string>Prótese/ Enxerto de PTFE</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <layout class="QFormLayout" name="formLayout_9">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_localProteseEnxertoDePTFE">
+         <property name="text">
+          <string>Local</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="comboBox_localProteseEnxertoDePTFE">
+         <item>
+          <property name="text">
+           <string>Braquibasílica</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Braquiocefálica</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Femural</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Radiocefálica</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ulnar-basílica</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
