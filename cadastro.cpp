@@ -144,27 +144,8 @@ void Cadastro::on_BotaoConfirmarCadastro_clicked()
     };
 
 
-    QNetworkAccessManager man;
-    QNetworkRequest req(QUrl("https://mighty-fortress-83537.herokuapp.com/createUser"));
-    req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
-    QJsonObject json;
-    QNetworkReply *reply = man.post(req, QJsonDocument(object).toJson());
-    while (!reply->isFinished())
-    {
-        qApp->processEvents();
-    }
-
-    QByteArray response_data = reply->readAll();
-
-    QJsonDocument jsonDoc = QJsonDocument::fromJson(response_data);
-    json = jsonDoc.object();
-
-    qDebug() <<json.keys();
-
-    reply->deleteLater();
-    if(!reply->error()){
-            hide();
-    }
+    req Req;
+    Req.post(object,"");
 
 
 

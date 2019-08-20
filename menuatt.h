@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <escolhapacienteatt.h>
 #include <dadosantropometricos.h>
+#include "req.h"
 
 namespace Ui {
 class MenuAtt;
@@ -40,6 +41,8 @@ private slots:
     void on_pushButton_controleReusoDialisadores_clicked();
 
     void on_pushButton_exames_clicked();
+
+    void on_pushButton_dadosClinicos_clicked();
 
 private:
     Ui::MenuAtt *ui;

@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QMainWindow>
+#include "req.h"
 
 namespace Ui {
 class ControleDeReuso;
@@ -18,6 +19,8 @@ public:
 
 private slots:
     void on_pushButton_2_clicked();
+
+    void on_pushButton_confirmar_clicked();
 
 private:
     Ui::ControleDeReuso *ui;

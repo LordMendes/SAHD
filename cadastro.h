@@ -4,6 +4,7 @@
 
 #include <QDialog>
 #include <QMainWindow>
+#include "req.h"
 
 namespace Ui {
 class Cadastro;

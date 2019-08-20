@@ -52,41 +52,7 @@ void cadastroUser::on_pushButton_2_clicked()
 
     };
 
-    QNetworkAccessManager man;
-    QJsonObject json;
-    QNetworkRequest req(QUrl("http://localhost:8080/createUser"));
-    req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
-
-    QNetworkReply *reply = man.post(req, QJsonDocument(object).toJson());
-    while (!reply->isFinished())
-    {
-        qApp->processEvents();
-    }
-
-    QByteArray response_data = reply->readAll();
-
-    QJsonDocument jsonDoc = QJsonDocument::fromJson(response_data);
-    json = jsonDoc.object();
-
-    reply->deleteLater();
-    if(!reply->error()){
-        qDebug()<<"POST foi um sucesso!";
-        QMessageBox::StandardButton saida = QMessageBox::information(this, "Cadastro", "Cadastro realizado com sucesso, deseja cadastrar outro?", QMessageBox::Ok | QMessageBox::No);
-        if(saida == QMessageBox::No){
-            hide();
-        }else{
-            ui->lineEdit_Nome->setText("");
-            ui->lineEdit_Cargo->setText("");
-            ui->lineEdit_Email->setText("");
-            ui->lineEdit_Senha->setText("");
-            ui->lineEdit_RegSahd->setText("");
-            ui->lineEdit_Telefone->setText("");
-            ui->lineEdit_RegConselho->setText("");
-            ui->checkBox_adm->setChecked(false);
-            ui->checkBox_std->setChecked(false);
-        }
-    }else{
-        qDebug()<< "erro";
-    }
+    req Req;
+    Req.post(object, "createUser");
 
 }

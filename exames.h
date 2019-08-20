@@ -2,6 +2,7 @@
 #define EXAMES_H
 
 #include <QDialog>
+#include "req.h"
 
 namespace Ui {
 class exames;

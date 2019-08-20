@@ -11,6 +11,7 @@
 #include "transfusao.h"
 #include "controledereuso.h"
 #include "exames.h"
+#include "dadosdehemodialise.h"
 
 
 MenuAtt::MenuAtt(QWidget *parent) :
@@ -106,4 +107,11 @@ void MenuAtt::on_pushButton_exames_clicked()
     exames exame;
     exame.setModal(true);
     exame.exec();
+}
+
+void MenuAtt::on_pushButton_dadosClinicos_clicked()
+{
+    DadosDeHemodialise dados;
+    dados.setModal(true);
+    dados.exec();
 }

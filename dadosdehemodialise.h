@@ -2,6 +2,7 @@
 #define DADOSDEHEMODIALISE_H
 
 #include <QDialog>
+#include "req.h"
 
 namespace Ui {
 class DadosDeHemodialise;
@@ -17,6 +18,8 @@ public:
 
 private slots:
     void on_pushButton_Cancelar_clicked();
+
+    void on_pushButton_Confirmar_clicked();
 
 private:
     Ui::DadosDeHemodialise *ui;
