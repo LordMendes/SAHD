@@ -1,6 +1,7 @@
 #include "eventosadversos.h"
 #include "ui_eventosadversos.h"
 #include "qmessagebox.h"
+#include <QJsonObject>
 
 EventosAdversos::EventosAdversos(QWidget *parent) :
     QDialog(parent),
@@ -12,6 +13,36 @@ EventosAdversos::EventosAdversos(QWidget *parent) :
     ui->lineEdit_evento2->hide();
     ui->lineEdit_evento3->hide();
     ui->lineEdit_evento4->hide();
+
+    QString outros1=NULL,outros2=NULL,outros3=NULL,outros4=NULL;
+
+    QString evento1 = ui->comboBox_evento1->currentText();
+    if(ui->comboBox_evento1->currentIndex() == 35){
+        outros1 = ui->lineEdit_evento1->text();
+    };
+    QString evento2 = ui->comboBox_evento2->currentText();
+    if(ui->comboBox_evento1->currentIndex() == 35){
+        outros2 = ui->lineEdit_evento2->text();
+    };
+    QString evento3 = ui->comboBox_evento3->currentText();
+    if(ui->comboBox_evento1->currentIndex() == 35){
+        outros3 = ui->lineEdit_evento3->text();
+    };
+    QString evento4 = ui->comboBox_evento4->currentText();
+    if(ui->comboBox_evento1->currentIndex() == 35){
+        outros4 = ui->lineEdit_evento4->text();
+    };
+
+
+    QJsonObject object {
+        {"evento1",evento1},
+        {"evento2", evento2},
+        {"evento3",evento3},
+        {"evento4", evento4}
+    };
+
+    req Req;
+    Req.post(object,"");
 
 }
 
