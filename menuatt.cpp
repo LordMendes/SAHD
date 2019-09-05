@@ -12,15 +12,18 @@
 #include "controledereuso.h"
 #include "exames.h"
 #include "dadosdehemodialise.h"
+#include <QJsonDocument>
 
 
-MenuAtt::MenuAtt(QWidget *parent) :
+MenuAtt::MenuAtt(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MenuAtt)
 {
     ui->setupUi(this);
-
-    ui->label->setText("NOME DO PACIENTE");
+    req Req;
+    QJsonDocument users = Req.get("orderedUsers");
+    qDebug()<<id;
+    ui->label->setText(users[id]["nome"].toString());
 }
 
 MenuAtt::~MenuAtt()

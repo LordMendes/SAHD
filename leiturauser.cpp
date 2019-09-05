@@ -18,10 +18,13 @@ LeituraUser::LeituraUser(QWidget *parent) :
     ui->setupUi(this);
 
     req Req;
+    jsonDoc = Req.get("orderedUsers");
+    qnt = Req.get("countUsers");
 
-    jsonDoc = Req.get("showOrdered");
+    int count = qnt[0]["count(`id`)"].toInt();
+    qDebug()<<qnt;
 
-    for(int i = 0 ; i < 5 ; i++){
+    for(int i = 0 ; i < count ; i++){
         ui->comboBox->addItem(jsonDoc[i]["nome"].toString());
     }
 
@@ -52,4 +55,9 @@ void LeituraUser::on_comboBox_currentTextChanged(const QString &arg1)
     }else{
         ui->lbtipo->setText("Usuário Administrador");
     }
+}
+
+void LeituraUser::on_pushButton_clicked()
+{
+    hide();
 }

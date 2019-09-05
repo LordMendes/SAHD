@@ -24,6 +24,7 @@ private slots:
 
 private:
     Ui::EscolhaPacienteAtt *ui;    
+    int id;
 
 };
 

@@ -8,7 +8,7 @@ req::req()
 void req::post(QJsonObject object, QString rota){
     QNetworkAccessManager man;
     QJsonObject json;
-    QNetworkRequest req(QUrl("http://localhost:8080/createUser"));
+    QNetworkRequest req(QUrl("https://saad-api.herokuapp.com/"+rota));
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
     QNetworkReply *reply = man.post(req, QJsonDocument(object).toJson());
@@ -32,7 +32,7 @@ void req::post(QJsonObject object, QString rota){
 QJsonDocument req::get(QString rota){
     QNetworkAccessManager man;
     QJsonObject json;
-    QNetworkRequest req(QUrl("http://localhost:8080/"+rota));
+    QNetworkRequest req(QUrl("https://saad-api.herokuapp.com/"+rota));
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
     QNetworkReply *reply = man.get(req);

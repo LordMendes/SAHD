@@ -145,7 +145,7 @@ void Cadastro::on_BotaoConfirmarCadastro_clicked()
 
 
     req Req;
-    Req.post(object,"");
+    Req.post(object,"createPaciente");
 
 
 

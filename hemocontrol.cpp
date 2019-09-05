@@ -24,7 +24,7 @@ hemoControl::hemoControl(int user, QWidget *parent) :
 
     req Req;
 
-    users = Req.get("showOrdered");
+    users = Req.get("orderedUsers");
 
     ui->label->setText(users[user]["nome"].toString());
 

@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "req.h"
+#include <QJsonObject>
 
 namespace Ui {
 class DadosDeHemodialise;

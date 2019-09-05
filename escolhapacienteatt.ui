@@ -21,18 +21,7 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QComboBox" name="comboBox_listaPaciente">
-        <item>
-         <property name="text">
-          <string>Jose Filho</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Lucas Mendes</string>
-         </property>
-        </item>
-       </widget>
+       <widget class="QComboBox" name="comboBox_listaPaciente"/>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">

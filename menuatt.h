@@ -15,7 +15,7 @@ class MenuAtt : public QDialog
     Q_OBJECT
 
 public:
-    explicit MenuAtt(QWidget *parent = 0);
+    explicit MenuAtt(int id, QWidget *parent = 0);
     ~MenuAtt();
 
 private slots:

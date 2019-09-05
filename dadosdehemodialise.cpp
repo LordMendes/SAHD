@@ -54,7 +54,7 @@ void DadosDeHemodialise::on_pushButton_Confirmar_clicked()
     QString NaClmin = ui->lineEdit_soroFisiologico_minutos->text();
     bool addVolume = ui->checkBox_volumeDeSoro_sim->isChecked();
     bool priming = ui->checkBox_primming_sim->isChecked();
-    QString Orientações = ui->textEdit_orientacoes->toPlainText();
+    QString Orientacoes = ui->textEdit_orientacoes->toPlainText();
     QString preHemoHora = ui->timeEdit_PreHemo->text();
     QString preHemoPA = ui->lineEdit_PreHemo_PA->text();
     QString preHemoFC = ui->lineEdit_PreHemo_FC->text();
@@ -109,5 +109,69 @@ void DadosDeHemodialise::on_pushButton_Confirmar_clicked()
     QString checagem = ui->lineEdit_PresMed_checagem->text();
     QString obs = ui->lineEdit_PresMed_obs->text();
 
+    QJsonObject object {
+
+        {"NaCl",NaCl},
+        {"NaClmin",NaClmin},
+        {"addVolume",addVolume},
+        {"priming",priming},
+        {"Orientacoes",Orientacoes},
+        {"preHemoHora",preHemoHora},
+        {"preHemoPA",preHemoPA},
+        {"preHemoFC",preHemoFC},
+        {"preHemoTax",preHemoTax},
+        {"preHemoOutros",preHemoOutros},
+        {"hora1Hora",hora1Hora},
+        {"hora1PA",hora1PA},
+        {"hora1FC",hora1FC},
+        {"hora1Tax",hora1Tax},
+        {"hora1Outros",hora1Outros},
+        {"hora2Hora",hora2Hora},
+        {"hora2PA",hora2PA},
+        {"hora2FC",hora2FC},
+        {"hora2Tax",hora2Tax},
+        {"hora2Outros",hora2Outros},
+        {"hora3Hora",hora3Hora},
+        {"hora3PA",hora3PA},
+        {"hora3FC",hora3FC},
+        {"hora3Tax",hora3Tax},
+        {"hora3Outos",hora3Outos},
+        {"hora4Hora",hora4Hora},
+        {"hora4PA",hora4PA},
+        {"hora4FC",hora4FC},
+        {"hora4Tax",hora4Tax},
+        {"hora4Outros",hora4Outros},
+        {"posHemoHora",posHemoHora},
+        {"posHemoPA",posHemoPA},
+        {"posHemoFC",posHemoFC},
+        {"posHemoTax",posHemoTax},
+        {"posHemoOutros",posHemoOutros},
+        {"cefaleia",cefaleia},
+        {"hipotensao",hipotensao},
+        {"hipertensao",hipertensao},
+        {"nauseas",nauseas},
+        {"convulsoes",convulsoes},
+        {"hipoglicemia",hipoglicemia},
+        {"hiperglicemia",hiperglicemia},
+        {"febre",febre},
+        {"caimbra",caimbra},
+        {"dipneia",dipneia},
+        {"agitacao",agitacao},
+        {"prurido",prurido},
+        {"arritmias",arritmias},
+        {"fraqueza",fraqueza},
+        {"convulsao",convulsao},
+        {"dorToracica",dorToracica},
+        {"dorLombar",dorLombar},
+        {"descricao",descricao},
+        {"dose",dose},
+        {"via",via},
+        {"intervalo",intervalo},
+        {"checagem",checagem},
+        {"obs",obs}
+    };
+
+    req Req;
+    Req.post(object,"");
 
 }
