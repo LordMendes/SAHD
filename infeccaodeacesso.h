@@ -32,6 +32,18 @@ private slots:
 
     void on_checkBox_hemoculturaSAOR_stateChanged(int arg1);
 
+    void on_pushButton_cancelar_clicked();
+
+    void on_comboBox_5_activated(const QString &arg1);
+
+    void on_comboBox_6_activated(const QString &arg1);
+
+    void on_comboBox_7_activated(const QString &arg1);
+
+    void on_comboBox_8_activated(const QString &arg1);
+
+    void on_comboBox_9_activated(const QString &arg1);
+
 private:
     Ui::InfeccaoDeAcesso *ui;
 };

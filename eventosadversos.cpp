@@ -36,9 +36,13 @@ EventosAdversos::EventosAdversos(QWidget *parent) :
 
     QJsonObject object {
         {"evento1",evento1},
+        {"outros1",outros1},
         {"evento2", evento2},
-        {"evento3",evento3},
-        {"evento4", evento4}
+        {"outros2", outros2},
+        {"evento3",evento3},        
+        {"outros3", outros3},
+        {"evento4", evento4},
+        {"outros4", outros4}
     };
 
     req Req;

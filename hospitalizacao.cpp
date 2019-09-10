@@ -1,12 +1,14 @@
 #include "hospitalizacao.h"
 #include "ui_hospitalizacao.h"
 #include <QMessageBox>
+#include <QJsonObject>
 
 Hospitalizacao::Hospitalizacao(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Hospitalizacao)
 {
     ui->setupUi(this);
+
 }
 
 Hospitalizacao::~Hospitalizacao()
@@ -20,4 +22,25 @@ void Hospitalizacao::on_pushButton_clicked()
     if(saida == QMessageBox::Yes){
         hide();
     }
+}
+
+void Hospitalizacao::on_pushButton_2_clicked()
+{
+    QString data =ui->dateEdit_Data->date().toString();
+    QString local =ui->lineEdit_Local->text();
+    QString motivo = ui->lineEdit_Motivo->text();
+    QString dataAlta = ui->dateEdit_DataDaAlta->date().toString();
+    QString observacoes = ui->lineEdit_Observaes->text();
+
+    QJsonObject object{
+        {"data",data},
+        {"local",local},
+        {"motivo",motivo},
+        {"dataAlta",dataAlta},
+        {"observacoes",observacoes}
+    };
+
+    req Req;
+    Req.post(object,"");
+
 }
