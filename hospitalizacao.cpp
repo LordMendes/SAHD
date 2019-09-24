@@ -7,6 +7,9 @@ Hospitalizacao::Hospitalizacao(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Hospitalizacao)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 
 }

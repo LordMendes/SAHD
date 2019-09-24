@@ -6,6 +6,9 @@ DadosDeHemodialise::DadosDeHemodialise(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DadosDeHemodialise)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 }
 

@@ -15,6 +15,10 @@ LeituraUser::LeituraUser(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::LeituraUser)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
+
     ui->setupUi(this);
 
     req Req;

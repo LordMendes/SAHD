@@ -19,6 +19,9 @@ MenuAtt::MenuAtt(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MenuAtt)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
     req Req;
     QJsonDocument users = Req.get("orderedUsers");

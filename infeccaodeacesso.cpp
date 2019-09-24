@@ -7,6 +7,9 @@ InfeccaoDeAcesso::InfeccaoDeAcesso(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::InfeccaoDeAcesso)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
     ui->checkBox_celuliteInfecciosa->setEnabled(false);
     ui->checkBox_infestacaoParasitaria->setEnabled(false);

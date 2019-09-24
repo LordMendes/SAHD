@@ -15,6 +15,9 @@ cadastroUser::cadastroUser(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::cadastroUser)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 }
 
@@ -55,4 +58,9 @@ void cadastroUser::on_pushButton_2_clicked()
     req Req;
     Req.post(object, "createUser");
 
+}
+
+void cadastroUser::on_pushButton_clicked()
+{
+    hide();
 }

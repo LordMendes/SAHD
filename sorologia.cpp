@@ -6,6 +6,9 @@ Sorologia::Sorologia(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Sorologia)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 
     ui->comboBox_AntiHBc->setEnabled(false);

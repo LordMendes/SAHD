@@ -20,6 +20,9 @@ Cadastro::Cadastro(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Cadastro)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 
 }
@@ -111,6 +114,7 @@ void Cadastro::on_BotaoConfirmarCadastro_clicked()
         {"celular", celular},
         {"email", email},
         {"cncdo", cncdo},
+        {"historia",historia},
         {"doencaRCbool", doencaRCbool},
         {"doencaRC", doencaRC},
         {"nefroesclerose", nefroesclerose},
@@ -153,14 +157,4 @@ void Cadastro::on_BotaoConfirmarCadastro_clicked()
 }
 
 
-/*oid Cadastro::on_checkBox_insuficienciaRenalAguda_stateChanged(int arg1)
-{
-    if(ui->checkBox_doencaRenalCronica->isChecked()){
-        QMessageBox::information(this,"Duplicidade","Essa opção não pode ser marcada caso 'Doença Renal Crônica' esteja marcada");
-        ui->checkBox_insuficienciaRenalAguda->setChecked(false);
-    }else{
-        ui->checkBox_insuficienciaRenalAguda->setChecked(true);
-    }
-
-}*/
 

@@ -12,8 +12,11 @@ class cadastro_leitura : public QDialog
     Q_OBJECT
 
 public:
-    explicit cadastro_leitura(QWidget *parent = nullptr);
+    explicit cadastro_leitura(int user,QWidget *parent = nullptr);
     ~cadastro_leitura();
+
+private slots:
+    void on_pushButton_clicked();
 
 private:
     Ui::cadastro_leitura *ui;

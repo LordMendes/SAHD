@@ -15,6 +15,9 @@ TelaLogin::TelaLogin(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::TelaLogin)
 {
+    setWindowFlags(Qt::Window
+        | Qt::WindowMinimizeButtonHint
+        | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 
     QPixmap logo(":/logo/Resources/logoRim.png");
@@ -22,8 +25,8 @@ TelaLogin::TelaLogin(QWidget *parent) :
 
     req Req;
 
-    userList =  Req.get("orderedUsers");
-    userCount = Req.get("countUsers");
+    userList =  Req.get("users");
+    userCount = Req.get("orderedUsers");
 
 }
 
@@ -39,14 +42,17 @@ void TelaLogin::on_pushButton_Entrar_clicked()
         int count=0;
         QString reg = ui->lineEdit_Registro->text();
         QString pass = ui->lineEdit_Senha->text();
-        qDebug()<<userList[1]["senha"];
-        qDebug()<<userList[1]["registro_sahd"];
+
         if(reg == 0 || pass  == ""){
             QMessageBox::StandardButton erro = QMessageBox::information(this, "Campos Vazios", "Um ou mais campos estão vazios", QMessageBox::Ok);
 
         }else{
 
             for(int i = 0 ; i < user; i++){
+                qDebug()<<userList[i]["registro_sahd"];
+                qDebug()<<userList[i]["senha"].toString();
+                qDebug()<<reg;
+                qDebug()<<pass;
                 if((userList[i]["registro_sahd"].toString() == reg)&&(userList[i]["senha"].toString() == pass)){
                     break;
                 }
@@ -64,7 +70,6 @@ void TelaLogin::on_pushButton_Entrar_clicked()
                 hide();
             }
         }
-        qDebug()<<userList[count]["nome"].toString();
 
 }
 

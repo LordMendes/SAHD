@@ -7,6 +7,9 @@ exames::exames(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::exames)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 }
 

@@ -6,6 +6,9 @@ dadosAntropometricos::dadosAntropometricos(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::dadosAntropometricos)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 
 

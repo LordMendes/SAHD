@@ -15,6 +15,9 @@ public:
     explicit escolhapacienteleitura(QWidget *parent = nullptr);
     ~escolhapacienteleitura();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::escolhapacienteleitura *ui;
 };

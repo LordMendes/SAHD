@@ -8,12 +8,17 @@
 #include "menuatt.h"
 #include "escolhapacienteatt.h"
 #include "leiturauser.h"
+#include <cadastro_leitura.h>
+#include "escolhapacienteleitura.h"
 
 
 hemoControl::hemoControl(int user, QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::hemoControl)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 
     QPixmap logo(":/logo/Resources/logoRim.png");
@@ -92,4 +97,11 @@ void hemoControl::on_actionConsultar_Usu_rio_triggered()
 
 void hemoControl::setUser(int x){
     this->user = x;
+}
+
+void hemoControl::on_btnListPascientes_clicked()
+{
+    escolhapacienteleitura leitura;
+    leitura.setModal(true);
+    leitura.exec();
 }

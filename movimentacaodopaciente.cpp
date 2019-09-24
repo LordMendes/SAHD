@@ -6,6 +6,9 @@ MovimentacaoDoPaciente::MovimentacaoDoPaciente(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MovimentacaoDoPaciente)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
     ui->lineEdit_Outros->hide();
 

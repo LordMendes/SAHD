@@ -40,6 +40,8 @@ private slots:
 
     void on_actionConsultar_Usu_rio_triggered();
 
+    void on_btnListPascientes_clicked();
+
 private:
     Ui::hemoControl *ui;
     void on_actionSair_clicked();

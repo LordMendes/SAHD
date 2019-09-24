@@ -7,6 +7,9 @@ EscolhaPacienteAtt::EscolhaPacienteAtt(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::EscolhaPacienteAtt)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 
     req Req;

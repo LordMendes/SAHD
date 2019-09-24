@@ -6,6 +6,9 @@ transfusao::transfusao(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::transfusao)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 }
 

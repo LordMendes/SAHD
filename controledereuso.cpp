@@ -8,6 +8,9 @@ ControleDeReuso::ControleDeReuso(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ControleDeReuso)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);    
 
 }

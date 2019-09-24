@@ -26,12 +26,15 @@ CONFIG += c++11
 
 SOURCES += \
         acessoatual.cpp \
+        acessoatual_leitura.cpp \
         cadastro.cpp \
+        cadastro_leitura.cpp \
         cadastrouser.cpp \
         controledereuso.cpp \
         dadosantropometricos.cpp \
         dadosdehemodialise.cpp \
         escolhapacienteatt.cpp \
+        escolhapacienteleitura.cpp \
         eventosadversos.cpp \
         exames.cpp \
         hemocontrol.cpp \
@@ -49,12 +52,15 @@ SOURCES += \
 
 HEADERS += \
     acessoatual.h \
+    acessoatual_leitura.h \
     cadastro.h \
+    cadastro_leitura.h \
     cadastrouser.h \
     controledereuso.h \
     dadosantropometricos.h \
     dadosdehemodialise.h \
     escolhapacienteatt.h \
+    escolhapacienteleitura.h \
     eventosadversos.h \
     exames.h \
     hemocontrol.h \
@@ -71,12 +77,15 @@ HEADERS += \
 
 FORMS += \
     acessoatual.ui \
+    acessoatual_leitura.ui \
     cadastro.ui \
+    cadastro_leitura.ui \
     cadastrouser.ui \
     controledereuso.ui \
     dadosantropometricos.ui \
     dadosdehemodialise.ui \
     escolhapacienteatt.ui \
+    escolhapacienteleitura.ui \
     eventosadversos.ui \
     exames.ui \
     hemocontrol.ui \
