@@ -58,7 +58,8 @@ void AcessoAtual::on_pushButton_Confirmar_clicked()
     if(ui->groupBox_proteseEnxertoDePTFE->isChecked()){
         protese = ui->comboBox_localProteseEnxertoDePTFE->currentText();
     }
-
+    req Req;
+    QJsonDocument id2 = Req.get("countConsultas");
     QJsonObject object
     {
         {"cateterDL", cateterDL},
@@ -69,7 +70,7 @@ void AcessoAtual::on_pushButton_Confirmar_clicked()
 
     };
 
-    req Req;
-    Req.post(object,"");
+
+    Req.put(object,"updateConsultas/:" + id2[0]["count(`id`)"].toString());
 
 }

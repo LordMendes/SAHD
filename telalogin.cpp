@@ -26,7 +26,7 @@ TelaLogin::TelaLogin(QWidget *parent) :
     req Req;
 
     userList =  Req.get("users");
-    userCount = Req.get("orderedUsers");
+    userCount = Req.get("countUsers");
 
 }
 
@@ -39,15 +39,15 @@ void TelaLogin::on_pushButton_Entrar_clicked()
 {
 
         int user = userCount[0]["count(`id`)"].toInt();
+        qDebug()<<"c:"<<userCount[0]["count(`id`)"].toInt();
         int count=0;
         QString reg = ui->lineEdit_Registro->text();
         QString pass = ui->lineEdit_Senha->text();
 
-        if(reg == 0 || pass  == ""){
+        if(reg == NULL || pass  == ""){
             QMessageBox::StandardButton erro = QMessageBox::information(this, "Campos Vazios", "Um ou mais campos estão vazios", QMessageBox::Ok);
 
         }else{
-
             for(int i = 0 ; i < user; i++){
                 qDebug()<<userList[i]["registro_sahd"];
                 qDebug()<<userList[i]["senha"].toString();
@@ -62,7 +62,6 @@ void TelaLogin::on_pushButton_Entrar_clicked()
 
             if(count >= user){
                 QMessageBox::StandardButton erro = QMessageBox::information(this, "Cancelar", "Usuário ou Senha incorretos", QMessageBox::Ok);
-
             }else{
                 qDebug()<<userList[count]["nome"].toString();
                 hemocontrol2 = new hemoControl(count, this);
@@ -70,6 +69,7 @@ void TelaLogin::on_pushButton_Entrar_clicked()
                 hide();
             }
         }
+
 
 }
 

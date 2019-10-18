@@ -189,6 +189,123 @@ void InfeccaoDeAcesso::on_pushButton_cancelar_clicked()
     QString resistente3 = ui->lineEdit_resistente3->text();
     QString resistente4 = ui->lineEdit_resistente4->text();
     QString resistente5 = ui->lineEdit_resistente5->text();
+    bool outroTipo = ui->checkBox_outrasInfeccoes->isChecked();
+    bool infeccaoUrinaria = ui->checkBox_infeccaoDeTratoUrinario->isChecked();
+    bool infeccaoIntestinal  = ui->checkBox_infeccaoIntestinalOuFocoAbdominal->isChecked();
+    bool infeccaoSitio = ui->checkBox_infeccaoDeSitioCirurgico->isChecked();
+    QString infeccaoSitioL = ui->lineEdit_infeccaoDeSitioCirurgico->text();
+    bool infeccaoPele = ui->checkBox_infeccaoDePele->isChecked();
+    bool infestaocaoParasita = ui->checkBox_infestacaoParasitaria->isChecked();
+    bool celuliteInfecciosa = ui->checkBox_celuliteInfecciosa->isChecked();
+    QString outro = ui->lineEdit_outro->text();
+    bool infeccaoAereaSup = ui->checkBox_infeccaoRespiratoriaDeViasAereaSuperiores->isChecked();
+    QString infeccaoAereaSupL = ui->lineEdit_infeccaoRespiratoriaDeViasAereaSuperior->text();
+    bool infeccaoAereaInf = ui->checkBox_infeccaoRespiratoriaDeViasAereaInferiores->isChecked();
+    QString infeccaoAereaInfL = ui->lineEdit_infeccaoRespiratoriaDeViasAereaInferiores->text();
+    bool outrasInfec = ui->checkBox_outrasInfeccoes->isChecked();
+    QString especificar = ui->lineEdit_outrasInfeccoes->text();
+
+    QJsonObject object {
+        {"data",data},
+        {"CDL",CDL},
+        {"permicath",permicath},
+        {"clpthp",clpthp},
+        {"FAV",FAV},
+        {"PTFE",PTFE},
+        {"hiperama",hiperama},
+        {"hiperamia1",hiperamia1},
+        {"hiperamia2",hiperamia2},
+        {"hiperamia3",hiperamia3},
+        {"endurecimentotc",endurecimentotc},
+        {"endurecimento1",endurecimento1},
+        {"endurecimento2",endurecimento2},
+        {"secrecaoPSIC",secrecaoPSIC},
+        {"secrecao1",secrecao1},
+        {"secrecao2",secrecao2},
+        {"colecao",colecao},
+        {"edemaLA",edemaLA},
+        {"dorEmLocal",dorEmLocal},
+        {"odor",odor},
+        {"febre",febre},
+        {"calafrios",calafrios},
+        {"mialdia",mialdia},
+        {"outroSintoma",outroSintoma},
+        {"hemocultura",hemocultura},
+        {"swab",swab},
+        {"pontaCateter",pontaCateter},
+        {"outrosColhidos",outrosColhidos},
+        {"outrosColhidos2",outrosColhidos2},
+        {"lookterapia",lookterapia},
+        {"antibiotico",antibiotico},
+        {"tempoantibiotico",tempoantibiotico},
+        {"mulpirocinaT",mulpirocinaT},
+        {"tempomMulpirocina",tempomMulpirocina},
+        {"vancominicina",vancominicina},
+        {"tempovancominicina",tempovancominicina},
+        {"gentamicina",gentamicina},
+        {"tempoGentamicina",tempoGentamicina},
+        {"meropenem",meropenem},
+        {"tempoMeropenem",tempoMeropenem},
+        {"cefepine",cefepine},
+        {"tempoCefepine",tempoCefepine},
+        {"pirecilina",pirecilina},
+        {"tempoPirecilina",tempoPirecilina},
+        {"polimixina",polimixina},
+        {"tempoPolimixina",tempoPolimixina},
+        {"anfotericina",anfotericina},
+        {"tempoAnfotericina",tempoAnfotericina},
+        {"cefazolina",cefazolina},
+        {"tempoCefazolina",tempoCefazolina},
+        {"teicoplanina",teicoplanina},
+        {"tempoTeicoplanina",tempoTeicoplanina},
+        {"oxacilina",oxacilina},
+        {"tempoOxacilina",tempoOxacilina},
+        {"daptomicina",daptomicina},
+        {"tempoDaptomicina",tempoDaptomicina},
+        {"ciprofloxacino",ciprofloxacino},
+        {"tempoCiproflo",tempoCiproflo},
+        {"levofloxacino",levofloxacino},
+        {"tempoLevofla",tempoLevofla},
+        {"amoxilina",amoxilina},
+        {"tempoAmoxilina",tempoAmoxilina},
+        {"cefalexina",cefalexina},
+        {"tempoCefalexina",tempoCefalexina},
+        {"outros",outros},
+        {"outros2",outros2},
+        {"tempoOutros",tempoOutros},
+        {"hemoculturaP",hemoculturaP},
+        {"pontadeCP",pontadeCP},
+        {"swabPositivo",swabPositivo},
+        {"micro1",micro1},
+        {"micro2",micro2},
+        {"micro3",micro3},
+        {"micro4",micro4},
+        {"micro5",micro5},
+        {"sensivel1",sensivel1},
+        {"sensivel2",sensivel2},
+        {"sensivel3",sensivel3},
+        {"sensivel4",sensivel5},
+        {"resistente1",resistente1},
+        {"resistente2",resistente2},
+        {"resistente3",resistente3},
+        {"resistente4",resistente4},
+        {"resistente5",resistente5},
+        {"outroTipo",outroTipo},
+        {"infeccaoUrinaria",infeccaoUrinaria},
+        {"infeccaoIntestinal",infeccaoIntestinal},
+        {"infeccaoSitio",infeccaoSitio},
+        {"infeccaoSitioL",infeccaoSitioL},
+        {"infeccaoPele",infeccaoPele},
+        {"celuliteInfecciosa",celuliteInfecciosa},
+        {"outro",outro},
+        {"infeccaoAereaSup",infeccaoAereaSup},
+        {"infeccaoAereaSupL",infeccaoAereaSupL},
+        {"infeccaoAereaInf",infeccaoAereaInf},
+        {"infeccaoAereaInfL",infeccaoAereaInfL},
+        {"outrasInfec",outrasInfec},
+        {"especificar",especificar}
+    };
+
 
 
 }

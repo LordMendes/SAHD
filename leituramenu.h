@@ -12,8 +12,11 @@ class LeituraMenu : public QDialog
     Q_OBJECT
 
 public:
-    explicit LeituraMenu(QWidget *parent = nullptr);
+    explicit LeituraMenu(int id, QWidget *parent = nullptr);
     ~LeituraMenu();
+
+private slots:
+    void on_pushButton_3_clicked();
 
 private:
     Ui::LeituraMenu *ui;

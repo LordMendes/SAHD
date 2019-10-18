@@ -19,6 +19,7 @@ public:
     req();
     QJsonDocument get(QString rota);
     void post(QJsonObject object, QString rota);
+    void put(QJsonObject object, QString rota);
 
 };
 

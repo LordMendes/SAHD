@@ -2,7 +2,7 @@
 #include "ui_escolhapacienteleitura.h"
 #include "req.h"
 #include <QJsonDocument>
-#include "cadastro_leitura.h"
+#include "leituramenu.h"
 
 escolhapacienteleitura::escolhapacienteleitura(QWidget *parent) :
     QDialog(parent),
@@ -34,7 +34,7 @@ void escolhapacienteleitura::on_pushButton_clicked()
 {
     int id = ui->comboBox->currentIndex();
     hide();
-    cadastro_leitura menuatt(id, this);
+    LeituraMenu menuatt(id, this);
     menuatt.setModal(true);
     menuatt.exec();
 }

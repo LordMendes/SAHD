@@ -32,6 +32,7 @@ SOURCES += \
         cadastrouser.cpp \
         controledereuso.cpp \
         dadosantropometricos.cpp \
+        dadosantropometricos_leitura.cpp \
         dadosdehemodialise.cpp \
         escolhapacienteatt.cpp \
         escolhapacienteleitura.cpp \
@@ -40,6 +41,7 @@ SOURCES += \
         hemocontrol.cpp \
         hospitalizacao.cpp \
         infeccaodeacesso.cpp \
+        leituramenu.cpp \
         leiturapaciente.cpp \
         leiturauser.cpp \
         main.cpp \
@@ -58,6 +60,7 @@ HEADERS += \
     cadastrouser.h \
     controledereuso.h \
     dadosantropometricos.h \
+    dadosantropometricos_leitura.h \
     dadosdehemodialise.h \
     escolhapacienteatt.h \
     escolhapacienteleitura.h \
@@ -66,6 +69,7 @@ HEADERS += \
     hemocontrol.h \
     hospitalizacao.h \
     infeccaodeacesso.h \
+    leituramenu.h \
     leiturapaciente.h \
     leiturauser.h \
     menuatt.h \
@@ -83,6 +87,7 @@ FORMS += \
     cadastrouser.ui \
     controledereuso.ui \
     dadosantropometricos.ui \
+    dadosantropometricos_leitura.ui \
     dadosdehemodialise.ui \
     escolhapacienteatt.ui \
     escolhapacienteleitura.ui \
@@ -91,6 +96,7 @@ FORMS += \
     hemocontrol.ui \
     hospitalizacao.ui \
     infeccaodeacesso.ui \
+    leituramenu.ui \
     leiturapaciente.ui \
     leiturauser.ui \
     menuatt.ui \

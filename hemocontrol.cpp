@@ -63,7 +63,8 @@ void hemoControl::on_registerButton_clicked()
 void hemoControl::on_AttButton_clicked()
 {
 
-    EscolhaPacienteAtt escolha;
+    EscolhaPacienteAtt escolha(user);
+    qDebug()<<"hemocontrol : "<<user;
     escolha.setModal(false);
     escolha.exec();
 }

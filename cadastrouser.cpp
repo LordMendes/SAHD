@@ -57,10 +57,15 @@ void cadastroUser::on_pushButton_2_clicked()
 
     req Req;
     Req.post(object, "createUser");
+    hide();
 
 }
 
+
 void cadastroUser::on_pushButton_clicked()
 {
-    hide();
+    QMessageBox::StandardButton saida = QMessageBox::information(this, "Cancelar Cadastro", "Todos os dados serão perdidos, deseja sair mesmo assim?", QMessageBox::Yes | QMessageBox::No);
+    if(saida == QMessageBox::Yes){
+        hide();
+    }
 }

@@ -14,7 +14,7 @@ class EscolhaPacienteAtt : public QDialog
     Q_OBJECT
 
 public:
-    explicit EscolhaPacienteAtt(QWidget *parent = 0);
+    explicit EscolhaPacienteAtt(int user, QWidget *parent = 0);
     ~EscolhaPacienteAtt();
 
 private slots:
@@ -25,6 +25,7 @@ private slots:
 private:
     Ui::EscolhaPacienteAtt *ui;    
     int id;
+    int user;
 
 };
 

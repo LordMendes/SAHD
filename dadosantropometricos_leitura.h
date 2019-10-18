@@ -2,12 +2,13 @@
 #define DADOSANTROPOMETRICOS_LEITURA_H
 
 #include <QWidget>
+#include <QDialog>
 
 namespace Ui {
 class dadosantropometricos_leitura;
 }
 
-class dadosantropometricos_leitura : public QWidget
+class dadosantropometricos_leitura : public QDialog
 {
     Q_OBJECT
 
