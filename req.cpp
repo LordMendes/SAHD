@@ -17,11 +17,6 @@ void req::post(QJsonObject object, QString rota){
         qApp->processEvents();
     }
 
-    QByteArray response_data = reply->readAll();
-
-    QJsonDocument jsonDoc = QJsonDocument::fromJson(response_data);
-    json = jsonDoc.object();
-
     if(!reply->error()){
         qDebug()<<"POST foi um sucesso!";
     }else{
@@ -59,7 +54,7 @@ void req::put(QJsonObject object, QString rota){
     QNetworkAccessManager man;
     QJsonObject json;
     QNetworkRequest req(QUrl("https://saad-api.herokuapp.com/"+rota));
-    req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    req.setHeader(QNetworkRequest::ContentTypeHeader, QString("application/json"));
 
     QNetworkReply *reply = man.put(req, QJsonDocument(object).toJson());
     while (!reply->isFinished())
@@ -67,15 +62,10 @@ void req::put(QJsonObject object, QString rota){
         qApp->processEvents();
     }
 
-    QByteArray response_data = reply->readAll();
-
-    QJsonDocument jsonDoc = QJsonDocument::fromJson(response_data);
-    json = jsonDoc.object();
-
     if(!reply->error()){
-        qDebug()<<"UPDATE foi um sucesso!";
+        qDebug()<<"PUT foi um sucesso!";
     }else{
-        qDebug()<< "erro";
+        qDebug()<< "erro : "<<reply->error();
     }
 }
 

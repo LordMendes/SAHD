@@ -36,14 +36,18 @@ void Hospitalizacao::on_pushButton_2_clicked()
     QString observacoes = ui->lineEdit_Observaes->text();
 
     QJsonObject object{
-        {"data",data},
+        {"dataHosp",data},
         {"local",local},
-        {"motivo",motivo},
+        {"motivoHosp",motivo},
         {"dataAlta",dataAlta},
         {"observacoes",observacoes}
     };
 
     req Req;
-    Req.post(object,"");
+    QJsonDocument id2 = Req.get("countConsultas");
+    int a = id2[0]["count(`id`)"].toInt();
+    QString s = QString::number(a);
+    Req.put(object,"updateConsultas/"+s);
+    hide();
 
 }

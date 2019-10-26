@@ -28,9 +28,9 @@ void DadosDeHemodialise::on_pushButton_Cancelar_clicked()
 void DadosDeHemodialise::on_pushButton_Confirmar_clicked()
 {
     QString nome = ui->lineEdit_nome->text();
-    QString pesoSeco = ui->lineEdit_pesoSeco->text();
+    QString pesoSeco2 = ui->lineEdit_pesoSeco->text();
     QString dialise = ui->lineEdit_dialiseDeNumero->text();
-    QString data = ui->dateEdit_data->date().toString();
+    QString data2 = ui->dateEdit_data->date().toString();
     bool segquasex = ui->checkBox_segquarsex->isChecked();
     bool terquisab = ui->checkBox_terquinsab->isChecked();
     QString tempo = ui->lineEdit_tempoDeHemodialise->text();
@@ -114,6 +114,17 @@ void DadosDeHemodialise::on_pushButton_Confirmar_clicked()
 
     QJsonObject object {
 
+        {"fx60",fx60},
+        {"fx80" ,fx80 },
+        {"fx100",fx100},
+        {"cdl",cdl},
+        {"permicath" ,permicath },
+        {"permicathTHP" ,permicathTHP },
+        {"FAV" ,FAV },
+        {"PTFE" ,PTFE },
+        {"segquasex",segquasex},
+        {"terquisab",terquisab},
+        {"data2", data2},
         {"NaCl",NaCl},
         {"NaClmin",NaClmin},
         {"addVolume",addVolume},
@@ -175,6 +186,10 @@ void DadosDeHemodialise::on_pushButton_Confirmar_clicked()
     };
 
     req Req;
-    Req.post(object,"");
+    QJsonDocument id2 = Req.get("countConsultas");
+    int a = id2[0]["count(`id`)"].toInt();
+    QString s = QString::number(a);
+    Req.put(object,"updateConsultas/"+s);
+    hide();
 
 }

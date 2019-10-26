@@ -67,10 +67,15 @@ void AcessoAtual::on_pushButton_Confirmar_clicked()
         {"cateterDLPTHP", cateterDLPTHP},
         {"fistula", fistula},
         {"protese", protese}
+        //{"paciente_id", 4}
 
     };
 
+    int a = id2[0]["count(`id`)"].toInt();
+    QString s = QString::number(a);
+    qDebug()<<s;
 
-    Req.put(object,"updateConsultas/:" + id2[0]["count(`id`)"].toString());
+    Req.put(object,"updateConsultas/"+s);
+    hide();
 
 }

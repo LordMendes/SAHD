@@ -206,12 +206,12 @@ void InfeccaoDeAcesso::on_pushButton_cancelar_clicked()
     QString especificar = ui->lineEdit_outrasInfeccoes->text();
 
     QJsonObject object {
-        {"data",data},
+        {"dataInfec",data},
         {"CDL",CDL},
-        {"permicath",permicath},
+        {"permicathInfec",permicath},
         {"clpthp",clpthp},
-        {"FAV",FAV},
-        {"PTFE",PTFE},
+        {"FAV2",FAV},
+        {"PTFEInfec",PTFE},
         {"hiperama",hiperama},
         {"hiperamia1",hiperamia1},
         {"hiperamia2",hiperamia2},
@@ -226,7 +226,7 @@ void InfeccaoDeAcesso::on_pushButton_cancelar_clicked()
         {"edemaLA",edemaLA},
         {"dorEmLocal",dorEmLocal},
         {"odor",odor},
-        {"febre",febre},
+        {"febreInfec",febre},
         {"calafrios",calafrios},
         {"mialdia",mialdia},
         {"outroSintoma",outroSintoma},
@@ -270,8 +270,8 @@ void InfeccaoDeAcesso::on_pushButton_cancelar_clicked()
         {"tempoAmoxilina",tempoAmoxilina},
         {"cefalexina",cefalexina},
         {"tempoCefalexina",tempoCefalexina},
-        {"outros",outros},
-        {"outros2",outros2},
+        {"outrosAcesso",outros},
+        {"outrosAcesso2",outros2},
         {"tempoOutros",tempoOutros},
         {"hemoculturaP",hemoculturaP},
         {"pontadeCP",pontadeCP},
@@ -297,7 +297,7 @@ void InfeccaoDeAcesso::on_pushButton_cancelar_clicked()
         {"infeccaoSitioL",infeccaoSitioL},
         {"infeccaoPele",infeccaoPele},
         {"celuliteInfecciosa",celuliteInfecciosa},
-        {"outro",outro},
+        {"outroInfec",outro},
         {"infeccaoAereaSup",infeccaoAereaSup},
         {"infeccaoAereaSupL",infeccaoAereaSupL},
         {"infeccaoAereaInf",infeccaoAereaInf},
@@ -306,6 +306,12 @@ void InfeccaoDeAcesso::on_pushButton_cancelar_clicked()
         {"especificar",especificar}
     };
 
+    req Req;
+    QJsonDocument id2 = Req.get("countConsultas");
+    int a = id2[0]["count(`id`)"].toInt();
+    QString s = QString::number(a);
+    Req.put(object,"updateConsultas/"+s);
+    hide();
 
 
 }

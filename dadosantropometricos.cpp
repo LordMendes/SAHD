@@ -41,7 +41,11 @@ void dadosAntropometricos::on_pushButton_clicked()
     };
 
     req Req;
-    Req.post(object, "");
+    QJsonDocument id2 = Req.get("countConsultas");
+    int a = id2[0]["count(`id`)"].toInt();
+    QString s = QString::number(a);
+    Req.put(object,"updateConsultas/"+s);
+    hide();
 }
 
 void dadosAntropometricos::on_pushButton_2_clicked()
