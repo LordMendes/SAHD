@@ -3,7 +3,7 @@
 #include <QMessageBox>
 #include <QJsonObject>
 
-Hospitalizacao::Hospitalizacao(QWidget *parent) :
+Hospitalizacao::Hospitalizacao(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Hospitalizacao)
 {
@@ -11,7 +11,7 @@ Hospitalizacao::Hospitalizacao(QWidget *parent) :
                 | Qt::WindowMinimizeButtonHint
                 | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
-
+    this->id=id;
 }
 
 Hospitalizacao::~Hospitalizacao()
@@ -48,6 +48,7 @@ void Hospitalizacao::on_pushButton_2_clicked()
     int a = id2[0]["count(`id`)"].toInt();
     QString s = QString::number(a);
     Req.put(object,"updateConsultas/"+s);
+    Req.put(object,"updateRecente/"+QString::number(id));
     hide();
 
 }

@@ -3,7 +3,7 @@
 #include "qmessagebox.h"
 #include <QJsonObject>
 
-EventosAdversos::EventosAdversos(QWidget *parent) :
+EventosAdversos::EventosAdversos(int id,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::EventosAdversos)
 {
@@ -17,7 +17,7 @@ EventosAdversos::EventosAdversos(QWidget *parent) :
     ui->lineEdit_evento3->hide();
     ui->lineEdit_evento4->hide();
 
-
+    this->id = id;
 
 
 }
@@ -111,5 +111,7 @@ void EventosAdversos::on_pushButton_confirmar_clicked()
     int a = id2[0]["count(`id`)"].toInt();
     QString s = QString::number(a);
     Req.put(object,"updateConsultas/"+s);
+
+    Req.put(object,"updateRecente/"+QString::number(id));
     hide();
 }

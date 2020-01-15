@@ -34,23 +34,30 @@ SOURCES += \
         dadosantropometricos.cpp \
         dadosantropometricos_leitura.cpp \
         dadosdehemodialise.cpp \
+        dadoshemodialise_leitura.cpp \
         escolhapacienteatt.cpp \
         escolhapacienteleitura.cpp \
         eventosadversos.cpp \
+        eventosadversos_leitura.cpp \
         exames.cpp \
+        getid.cpp \
         hemocontrol.cpp \
         hospitalizacao.cpp \
+        hospitalizacao_leitura.cpp \
         infeccaodeacesso.cpp \
+        infeccaodeacesso_leitura.cpp \
         leituramenu.cpp \
         leiturapaciente.cpp \
         leiturauser.cpp \
         main.cpp \
         menuatt.cpp \
         movimentacaodopaciente.cpp \
+        movimentacaodopaciente_leitura.cpp \
         req.cpp \
         sorologia.cpp \
         telalogin.cpp \
-        transfusao.cpp
+        transfusao.cpp \
+        transfusao_leitura.cpp
 
 HEADERS += \
     acessoatual.h \
@@ -62,22 +69,29 @@ HEADERS += \
     dadosantropometricos.h \
     dadosantropometricos_leitura.h \
     dadosdehemodialise.h \
+    dadoshemodialise_leitura.h \
     escolhapacienteatt.h \
     escolhapacienteleitura.h \
     eventosadversos.h \
+    eventosadversos_leitura.h \
     exames.h \
+    getid.h \
     hemocontrol.h \
     hospitalizacao.h \
+    hospitalizacao_leitura.h \
     infeccaodeacesso.h \
+    infeccaodeacesso_leitura.h \
     leituramenu.h \
     leiturapaciente.h \
     leiturauser.h \
     menuatt.h \
     movimentacaodopaciente.h \
+    movimentacaodopaciente_leitura.h \
     req.h \
     sorologia.h \
     telalogin.h \
-    transfusao.h
+    transfusao.h \
+    transfusao_leitura.h
 
 FORMS += \
     acessoatual.ui \
@@ -89,21 +103,27 @@ FORMS += \
     dadosantropometricos.ui \
     dadosantropometricos_leitura.ui \
     dadosdehemodialise.ui \
+    dadoshemodialise_leitura.ui \
     escolhapacienteatt.ui \
     escolhapacienteleitura.ui \
     eventosadversos.ui \
+    eventosadversos_leitura.ui \
     exames.ui \
     hemocontrol.ui \
     hospitalizacao.ui \
+    hospitalizacao_leitura.ui \
     infeccaodeacesso.ui \
+    infeccaodeacesso_leitura.ui \
     leituramenu.ui \
     leiturapaciente.ui \
     leiturauser.ui \
     menuatt.ui \
     movimentacaodopaciente.ui \
+    movimentacaodopaciente_leitura.ui \
     sorologia.ui \
     telalogin.ui \
-    transfusao.ui
+    transfusao.ui \
+    transfusao_leitura.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>InfeccaoDeAcesso</class>
- <widget class="QDialog" name="InfeccaoDeAcesso">
+ <class>infeccaodeacesso_leitura</class>
+ <widget class="QWidget" name="infeccaodeacesso_leitura">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1158</width>
-    <height>744</height>
+    <width>1203</width>
+    <height>614</height>
    </rect>
   </property>
-  <property name="sizePolicy">
-   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
-    <horstretch>0</horstretch>
-    <verstretch>0</verstretch>
-   </sizepolicy>
-  </property>
   <property name="windowTitle">
-   <string>Infecção de Acesso</string>
+   <string>Form</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_8">
    <item>
@@ -30,10 +24,10 @@
        <widget class="QWidget" name="scrollAreaWidgetContents">
         <property name="geometry">
          <rect>
-          <x>-785</x>
-          <y>0</y>
-          <width>1896</width>
-          <height>785</height>
+          <x>-563</x>
+          <y>-9</y>
+          <width>1827</width>
+          <height>775</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -64,7 +58,11 @@
                   <item>
                    <layout class="QHBoxLayout" name="horizontalLayout">
                     <item>
-                     <widget class="QDateEdit" name="dateEdit_infeccaoDeAcesso"/>
+                     <widget class="QLabel" name="data">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
                     </item>
                     <item>
                      <spacer name="horizontalSpacer">
@@ -334,7 +332,11 @@
                      </widget>
                     </item>
                     <item>
-                     <widget class="QLineEdit" name="lineEdit_outrosSinais"/>
+                     <widget class="QLabel" name="outros_sintomas">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
                     </item>
                    </layout>
                   </item>
@@ -347,24 +349,17 @@
                   <string>Exames Colhidos</string>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_2">
-                  <item row="0" column="0">
-                   <widget class="QCheckBox" name="checkBox_hemocultura">
-                    <property name="text">
-                     <string>Hemocultura </string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="0">
-                   <widget class="QCheckBox" name="checkBox_pontaDeCateter">
-                    <property name="text">
-                     <string>Ponta de cateter</string>
-                    </property>
-                   </widget>
-                  </item>
                   <item row="0" column="1">
                    <widget class="QCheckBox" name="checkBox_swab">
                     <property name="text">
                      <string>Swab </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QCheckBox" name="checkBox_hemocultura">
+                    <property name="text">
+                     <string>Hemocultura </string>
                     </property>
                    </widget>
                   </item>
@@ -381,6 +376,13 @@
                     </property>
                    </spacer>
                   </item>
+                  <item row="1" column="0">
+                   <widget class="QCheckBox" name="checkBox_pontaDeCateter">
+                    <property name="text">
+                     <string>Ponta de cateter</string>
+                    </property>
+                   </widget>
+                  </item>
                   <item row="1" column="1">
                    <layout class="QHBoxLayout" name="horizontalLayout_7">
                     <item>
@@ -391,7 +393,11 @@
                      </widget>
                     </item>
                     <item>
-                     <widget class="QLineEdit" name="lineEdit_outrosExames"/>
+                     <widget class="QLabel" name="outros_exames_colhidos">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
                     </item>
                    </layout>
                   </item>
@@ -433,9 +439,6 @@
                      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                     </property>
                    </widget>
-                  </item>
-                  <item row="1" column="2">
-                   <widget class="QSpinBox" name="spinBox_MupirocinaTopica"/>
                   </item>
                   <item row="1" column="3">
                    <widget class="QLabel" name="label_5">
@@ -508,9 +511,6 @@
                     </property>
                    </widget>
                   </item>
-                  <item row="2" column="2">
-                   <widget class="QSpinBox" name="spinBox_vancomicina"/>
-                  </item>
                   <item row="6" column="1">
                    <widget class="QLabel" name="label_12">
                     <property name="text">
@@ -530,9 +530,6 @@
                      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                     </property>
                    </widget>
-                  </item>
-                  <item row="3" column="2">
-                   <widget class="QSpinBox" name="spinBox_gentamicina"/>
                   </item>
                   <item row="9" column="0">
                    <widget class="QCheckBox" name="checkBox_cefazolina">
@@ -852,27 +849,6 @@
                     </property>
                    </widget>
                   </item>
-                  <item row="4" column="2">
-                   <widget class="QSpinBox" name="spinBox_meropenem"/>
-                  </item>
-                  <item row="6" column="2">
-                   <widget class="QSpinBox" name="spinBox_pieperacilinaTazobactam"/>
-                  </item>
-                  <item row="5" column="2">
-                   <widget class="QSpinBox" name="spinBox_cefepime"/>
-                  </item>
-                  <item row="8" column="2">
-                   <widget class="QSpinBox" name="spinBox_anfotericinaB"/>
-                  </item>
-                  <item row="7" column="2">
-                   <widget class="QSpinBox" name="spinBox_polimixinaB"/>
-                  </item>
-                  <item row="9" column="2">
-                   <widget class="QSpinBox" name="spinBox_cefazolina"/>
-                  </item>
-                  <item row="10" column="2">
-                   <widget class="QSpinBox" name="spinBox_teicoplanina"/>
-                  </item>
                   <item row="0" column="0">
                    <widget class="QCheckBox" name="checkBox_lookterapia">
                     <property name="styleSheet">
@@ -883,30 +859,12 @@
                     </property>
                    </widget>
                   </item>
-                  <item row="11" column="2">
-                   <widget class="QSpinBox" name="spinBox_oxacilina"/>
-                  </item>
-                  <item row="13" column="2">
-                   <widget class="QSpinBox" name="spinBox_ciprofloxacino"/>
-                  </item>
-                  <item row="14" column="2">
-                   <widget class="QSpinBox" name="spinBox_levofloxacino"/>
-                  </item>
-                  <item row="12" column="2">
-                   <widget class="QSpinBox" name="spinBox_daptomicina"/>
-                  </item>
                   <item row="0" column="4">
                    <widget class="QLabel" name="label_3">
                     <property name="text">
                      <string>Dias</string>
                     </property>
                    </widget>
-                  </item>
-                  <item row="15" column="2">
-                   <widget class="QSpinBox" name="spinBox_amoxilinaClavunlato"/>
-                  </item>
-                  <item row="16" column="2">
-                   <widget class="QSpinBox" name="spinBox_cefalexina"/>
                   </item>
                   <item row="17" column="3">
                    <widget class="QLabel" name="label_36">
@@ -915,9 +873,6 @@
                     </property>
                    </widget>
                   </item>
-                  <item row="17" column="2">
-                   <widget class="QSpinBox" name="spinBox_outrosAntibioticos"/>
-                  </item>
                   <item row="0" column="2">
                    <widget class="QLabel" name="label_TUlookterapia">
                     <property name="text">
@@ -925,13 +880,14 @@
                     </property>
                    </widget>
                   </item>
-                  <item row="0" column="3">
-                   <widget class="QSpinBox" name="spinBox_TUlookterapia4"/>
-                  </item>
                   <item row="17" column="1">
                    <layout class="QHBoxLayout" name="horizontalLayout_10">
                     <item>
-                     <widget class="QLineEdit" name="lineEdit_outrosAntibioticos"/>
+                     <widget class="QLabel" name="tempo_uso_outro">
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
                     </item>
                     <item>
                      <widget class="QLabel" name="label_37">
@@ -952,12 +908,9 @@
                      </widget>
                     </item>
                     <item>
-                     <widget class="QLineEdit" name="lineEdit_antibiotico">
-                      <property name="sizePolicy">
-                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                       </sizepolicy>
+                     <widget class="QLabel" name="antibiotico">
+                      <property name="text">
+                       <string>TextLabel</string>
                       </property>
                      </widget>
                     </item>
@@ -970,6 +923,251 @@
                     </property>
                     <property name="text">
                      <string>Meropenem </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QLabel" name="tempo_uso1">
+                    <property name="text">
+                     <string>TextLabel</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QLabel" name="tempo_uso2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QLabel" name="tempo_uso3">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QLabel" name="tempo_uso4">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="17" column="2">
+                   <widget class="QLabel" name="label_40">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="16" column="2">
+                   <widget class="QLabel" name="tempo_uso16">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="15" column="2">
+                   <widget class="QLabel" name="label_42">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="14" column="2">
+                   <widget class="QLabel" name="tempo_uso15">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="2">
+                   <widget class="QLabel" name="tempo_uso14">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="2">
+                   <widget class="QLabel" name="tempo_uso13">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="2">
+                   <widget class="QLabel" name="tempo_uso12">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="2">
+                   <widget class="QLabel" name="tempo_uso11">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="2">
+                   <widget class="QLabel" name="tempo_uso10">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="2">
+                   <widget class="QLabel" name="tempo_uso9">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="2">
+                   <widget class="QLabel" name="tempo_uso8">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="2">
+                   <widget class="QLabel" name="tempo_uso7">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="2">
+                   <widget class="QLabel" name="tempo_uso6">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QLabel" name="tempo_uso5">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="4">
+                   <widget class="QLabel" name="d1">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="4">
+                   <widget class="QLabel" name="d2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="4">
+                   <widget class="QLabel" name="d3">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="4">
+                   <widget class="QLabel" name="d4">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="4">
+                   <widget class="QLabel" name="d5">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="4">
+                   <widget class="QLabel" name="d6">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="4">
+                   <widget class="QLabel" name="d7">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="4">
+                   <widget class="QLabel" name="d8">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="4">
+                   <widget class="QLabel" name="d9">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="4">
+                   <widget class="QLabel" name="d10">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="4">
+                   <widget class="QLabel" name="d11">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="4">
+                   <widget class="QLabel" name="d12">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="4">
+                   <widget class="QLabel" name="d13">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="14" column="4">
+                   <widget class="QLabel" name="d14">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="15" column="4">
+                   <widget class="QLabel" name="d15">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="16" column="4">
+                   <widget class="QLabel" name="d16">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="17" column="4">
+                   <widget class="QLabel" name="d17">
+                    <property name="text">
+                     <string/>
                     </property>
                    </widget>
                   </item>
@@ -1011,7 +1209,7 @@
                 <string>font-style: bold;</string>
                </property>
                <property name="title">
-                <string>Swab positivo </string>
+                <string/>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -1020,612 +1218,6 @@
                 <bool>true</bool>
                </property>
                <layout class="QGridLayout" name="gridLayout_3">
-                <item row="12" column="0">
-                 <widget class="QLabel" name="label_resistente4">
-                  <property name="text">
-                   <string>Resistente a:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="2">
-                 <widget class="QLabel" name="label_2">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="text">
-                   <string>Hemograma</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item row="9" column="0">
-                 <widget class="QLabel" name="label_sensivel3">
-                  <property name="text">
-                   <string>Sensível a:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="4">
-                 <widget class="QLabel" name="label_39">
-                  <property name="text">
-                   <string>Ponta de Catéter</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item row="15" column="3">
-                 <widget class="QCheckBox" name="cb14">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="4" column="0">
-                 <widget class="QComboBox" name="comboBox_6">
-                  <item>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Acinetobacter baumannii </string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Aeromonas hydrophila</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Candida albicans</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Candida glabrata</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Cintrobacter Koseri</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Corynebacterium amycolatum</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Enterobacter cloacae </string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Enterococcus faecalis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Escherichia coli</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Klebsiella pneumoniae</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Pseudomonas aeruginosa</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Proteus mirabilis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Ralstonia picketti</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Salmonella Enteritidis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Serratia marcescens</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Shewanella algae</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus aureus</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus coagulase negativa</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus coagulase positiva</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus epidermidis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus faecalis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus hominis ssp hominis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus lugdunensis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Streptococcus anginosus</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Streptococcus thoraltensis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Outro</string>
-                   </property>
-                  </item>
-                 </widget>
-                </item>
-                <item row="3" column="0">
-                 <widget class="QLabel" name="label_sensivel1">
-                  <property name="text">
-                   <string>Sensivel a:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="11" column="2">
-                 <widget class="QCheckBox" name="cb10">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="11" column="3">
-                 <widget class="QCheckBox" name="cb11">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="6" column="2">
-                 <widget class="QLineEdit" name="lineEdit_sensivel2">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="QComboBox" name="comboBox_5">
-                  <item>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Acinetobacter baumannii </string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Aeromonas hydrophila</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Candida albicans</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Candida glabrata</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Cintrobacter Koseri</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Corynebacterium amycolatum</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Enterobacter cloacae </string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Enterococcus faecalis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Escherichia coli</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Klebsiella pneumoniae</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Pseudomonas aeruginosa</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Proteus mirabilis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Ralstonia picketti</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Salmonella Enteritidis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Serratia marcescens</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Shewanella algae</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus aureus</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus coagulase negativa</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus coagulase positiva</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus epidermidis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus faecalis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus hominis ssp hominis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus lugdunensis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Streptococcus anginosus</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Streptococcus thoraltensis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Outro</string>
-                   </property>
-                  </item>
-                 </widget>
-                </item>
-                <item row="13" column="0">
-                 <widget class="QLabel" name="label_sensivel4">
-                  <property name="text">
-                   <string>Sensível a:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="17" column="0">
-                 <widget class="QLabel" name="label_sensivel5">
-                  <property name="text">
-                   <string>Sensível a:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="11" column="4">
-                 <widget class="QCheckBox" name="cb12">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="15" column="2">
-                 <widget class="QCheckBox" name="cb13">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="4" column="4">
-                 <widget class="QCheckBox" name="cb6">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="15" column="4">
-                 <widget class="QCheckBox" name="cb15">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="4">
-                 <widget class="QCheckBox" name="cb3">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="8" column="2">
-                 <widget class="QLineEdit" name="lineEdit_resistente3">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                 </widget>
-                </item>
-                <item row="9" column="2">
-                 <widget class="QLineEdit" name="lineEdit_sensivel3">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                 </widget>
-                </item>
-                <item row="7" column="3">
-                 <widget class="QCheckBox" name="cb8">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="8" column="0">
-                 <widget class="QLabel" name="label_resistente3">
-                  <property name="text">
-                   <string>Resistente a:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="2">
-                 <widget class="QLineEdit" name="lineEdit_sensivel1">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="3">
-                 <widget class="QCheckBox" name="cb2">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
                 <item row="0" column="0">
                  <widget class="QLabel" name="label">
                   <property name="sizePolicy">
@@ -1642,34 +1234,8 @@
                   </property>
                  </widget>
                 </item>
-                <item row="0" column="3">
-                 <widget class="QLabel" name="label_38">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="text">
-                   <string>Swab</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="2">
-                 <widget class="QLineEdit" name="lineEdit_resistente1">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="2">
-                 <widget class="QCheckBox" name="cb1">
+                <item row="15" column="3">
+                 <widget class="QCheckBox" name="checkBox_15">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -1688,194 +1254,6 @@
                   <property name="text">
                    <string/>
                   </property>
-                 </widget>
-                </item>
-                <item row="5" column="0">
-                 <widget class="QLabel" name="label_resistente2">
-                  <property name="text">
-                   <string>Resistente a:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="12" column="2">
-                 <widget class="QLineEdit" name="lineEdit_resistente4">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                 </widget>
-                </item>
-                <item row="4" column="3">
-                 <widget class="QCheckBox" name="cb5">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="5" column="2">
-                 <widget class="QLineEdit" name="lineEdit_resistente2">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                 </widget>
-                </item>
-                <item row="11" column="0">
-                 <widget class="QComboBox" name="comboBox_8">
-                  <item>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Acinetobacter baumannii </string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Aeromonas hydrophila</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Candida albicans</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Candida glabrata</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Cintrobacter Koseri</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Corynebacterium amycolatum</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Enterobacter cloacae </string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Enterococcus faecalis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Escherichia coli</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Klebsiella pneumoniae</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Pseudomonas aeruginosa</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Proteus mirabilis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Ralstonia picketti</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Salmonella Enteritidis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Serratia marcescens</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Shewanella algae</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus aureus</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus coagulase negativa</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus coagulase positiva</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus epidermidis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus faecalis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus hominis ssp hominis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus lugdunensis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Streptococcus anginosus</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Streptococcus thoraltensis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Outro</string>
-                   </property>
-                  </item>
                  </widget>
                 </item>
                 <item row="16" column="0">
@@ -1885,179 +1263,11 @@
                   </property>
                  </widget>
                 </item>
-                <item row="2" column="0">
-                 <widget class="QLabel" name="label_resistente1">
-                  <property name="text">
-                   <string>Resistente a:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="7" column="2">
-                 <widget class="QCheckBox" name="cb7">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">align: center</string>
-                  </property>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="microorganismos_2">
                   <property name="text">
                    <string/>
                   </property>
-                 </widget>
-                </item>
-                <item row="6" column="0">
-                 <widget class="QLabel" name="label_sensivel2">
-                  <property name="text">
-                   <string>Sensível a:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="15" column="0">
-                 <widget class="QComboBox" name="comboBox_9">
-                  <item>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Acinetobacter baumannii </string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Aeromonas hydrophila</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Candida albicans</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Candida glabrata</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Cintrobacter Koseri</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Corynebacterium amycolatum</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Enterobacter cloacae </string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Enterococcus faecalis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Escherichia coli</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Klebsiella pneumoniae</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Pseudomonas aeruginosa</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Proteus mirabilis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Ralstonia picketti</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Salmonella Enteritidis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Serratia marcescens</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Shewanella algae</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus aureus</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus coagulase negativa</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus coagulase positiva</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus epidermidis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus faecalis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus hominis ssp hominis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus lugdunensis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Streptococcus anginosus</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Streptococcus thoraltensis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Outro</string>
-                   </property>
-                  </item>
                  </widget>
                 </item>
                 <item row="4" column="2">
@@ -2082,7 +1292,7 @@
                   </property>
                  </widget>
                 </item>
-                <item row="7" column="4">
+                <item row="15" column="1">
                  <widget class="QCheckBox" name="cb9">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -2104,172 +1314,470 @@
                   </property>
                  </widget>
                 </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_sensivel1">
+                  <property name="text">
+                   <string>Sensivel a:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QLabel" name="label_resistente2">
+                  <property name="text">
+                   <string>Resistente a:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="3">
+                 <widget class="QCheckBox" name="checkBox_13">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="microorganismos_1">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="2">
+                 <widget class="QCheckBox" name="cb6">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="2">
+                 <widget class="QCheckBox" name="cb8">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_resistente1">
+                  <property name="text">
+                   <string>Resistente a:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="1">
+                 <widget class="QCheckBox" name="cb7">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QCheckBox" name="cb2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QCheckBox" name="cb1">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="3">
+                 <widget class="QCheckBox" name="checkBox_14">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="13" column="0">
+                 <widget class="QLabel" name="label_sensivel4">
+                  <property name="text">
+                   <string>Sensível a:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="0">
+                 <widget class="QLabel" name="label_resistente3">
+                  <property name="text">
+                   <string>Resistente a:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="1">
+                 <widget class="QCheckBox" name="cb5">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Hemograma</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="15" column="2">
+                 <widget class="QCheckBox" name="cb10">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="3">
+                 <widget class="QCheckBox" name="checkBox_11">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QLabel" name="resistente_a_1">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QLabel" name="label_sensivel2">
+                  <property name="text">
+                   <string>Sensível a:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="15" column="0">
+                 <widget class="QLabel" name="microorganismos_5">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="17" column="0">
+                 <widget class="QLabel" name="label_sensivel5">
+                  <property name="text">
+                   <string>Sensível a:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="0">
+                 <widget class="QLabel" name="microorganismos_4">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="3">
+                 <widget class="QCheckBox" name="checkBox_12">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QLabel" name="sensivel_a_1">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QCheckBox" name="cb3">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">align: center</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLabel" name="label_39">
+                  <property name="text">
+                   <string>Ponta de Catéter</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="label_38">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Swab</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
                 <item row="7" column="0">
-                 <widget class="QComboBox" name="comboBox_7">
-                  <item>
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Acinetobacter baumannii </string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Aeromonas hydrophila</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Candida albicans</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Candida glabrata</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Cintrobacter Koseri</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Corynebacterium amycolatum</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Enterobacter cloacae </string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Enterococcus faecalis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Escherichia coli</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Klebsiella pneumoniae</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Pseudomonas aeruginosa</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Proteus mirabilis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Ralstonia picketti</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Salmonella Enteritidis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Serratia marcescens</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Shewanella algae</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus aureus</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus coagulase negativa</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus coagulase positiva</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus epidermidis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus faecalis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus hominis ssp hominis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Staphylococcus lugdunensis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Streptococcus anginosus</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Streptococcus thoraltensis</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Outro</string>
-                   </property>
-                  </item>
-                 </widget>
-                </item>
-                <item row="13" column="2">
-                 <widget class="QLineEdit" name="lineEdit_sensivel4">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
+                 <widget class="QLabel" name="microorganismos_3">
+                  <property name="text">
+                   <string/>
                   </property>
                  </widget>
                 </item>
-                <item row="16" column="2">
-                 <widget class="QLineEdit" name="lineEdit_resistente5">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
+                <item row="5" column="1">
+                 <widget class="QLabel" name="resistente_a_2">
+                  <property name="text">
+                   <string/>
                   </property>
                  </widget>
                 </item>
-                <item row="17" column="2">
-                 <widget class="QLineEdit" name="lineEdit_sensivel5">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
+                <item row="9" column="0">
+                 <widget class="QLabel" name="label_sensivel3">
+                  <property name="text">
+                   <string>Sensível a:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="12" column="0">
+                 <widget class="QLabel" name="label_resistente4">
+                  <property name="text">
+                   <string>Resistente a:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="1">
+                 <widget class="QLabel" name="sensivel_a_2">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="1">
+                 <widget class="QLabel" name="resistente_a_3">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="9" column="1">
+                 <widget class="QLabel" name="sensivel_a_3">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="12" column="1">
+                 <widget class="QLabel" name="resistente_a_4">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="13" column="1">
+                 <widget class="QLabel" name="sensivel_a_4">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="16" column="1">
+                 <widget class="QLabel" name="resistente_a_5">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="17" column="1">
+                 <widget class="QLabel" name="sensivel_a_5">
+                  <property name="text">
+                   <string/>
                   </property>
                  </widget>
                 </item>
@@ -2410,36 +1918,29 @@
        </widget>
       </widget>
      </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_9">
-       <item>
-        <spacer name="horizontalSpacer_9">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_cancelar">
-         <property name="text">
-          <string>Confirmar</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_Cancelar">
-         <property name="text">
-          <string>Cancelar</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Voltar">
+       <property name="text">
+        <string>Voltar</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>

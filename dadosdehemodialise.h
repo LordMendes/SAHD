@@ -14,7 +14,7 @@ class DadosDeHemodialise : public QDialog
     Q_OBJECT
 
 public:
-    explicit DadosDeHemodialise(QWidget *parent = 0);
+    explicit DadosDeHemodialise(int id, QWidget *parent = 0);
     ~DadosDeHemodialise();
 
 private slots:
@@ -24,6 +24,7 @@ private slots:
 
 private:
     Ui::DadosDeHemodialise *ui;
+    int id;
 };
 
 #endif // DADOSDEHEMODIALISE_H

@@ -100,9 +100,10 @@ void Cadastro::on_BotaoConfirmarCadastro_clicked()
     QJsonObject object
     {
         {"nome", nome},
-        {"data", dataN},
+        {"dataN", dataN},
         {"cpf", cpf},
         {"rg", rg},
+        {"regHospitalar", regHospitalar},
         {"cns", cns},
         {"procedencia", procedencia},
         {"naturalidade", naturalidade},
@@ -121,18 +122,18 @@ void Cadastro::on_BotaoConfirmarCadastro_clicked()
         {"nefropatia", nefropatia},
         {"glomerulopatias", glomerulopatias},
         {"lupus", lupus},
-        {"doencaUrulogica", doencaUrulogica},
+        {"doencaUrologica", doencaUrulogica},
         {"doencaCronica", doencaCronica},
         {"cardiorrenal", cardiorrenal},
         {"hepatorrenal", hepatorrenal},
         {"sindrome", sindrome},
-        {"doencaPolocistica", doencaPolocistica},
+        {"doencaPolicistica", doencaPolocistica},
         {"causas", causas},
         {"malFormacao", malFormacao},
         {"naoSeAplica", naoSeAplica},
         {"insuficienciaRA", insuficienciaRA},
         {"dataIRA", dataIRA},
-        {"grupoSanguinio", grupoSanguinio},
+        {"grupoSanguineo", grupoSanguinio},
         {"fator", fator},
         {"CBmedicamento", CBmedicamento},
         {"medicamentos", medicamentos},
@@ -144,14 +145,14 @@ void Cadastro::on_BotaoConfirmarCadastro_clicked()
         {"concentradoHemacias", concentradoHemacias},
         {"plasma", plasma},
         {"concentradoPlaquetas", concentradoPlaquetas}
-
     };
 
-
+    QJsonObject nulo;
     req Req;
+    qDebug()<<"Criando tabela: ";
     Req.post(object,"createPaciente");
-
-
+    qDebug()<<"Criando recente: ";
+    Req.post(nulo,"createRecente");
 
 
 }

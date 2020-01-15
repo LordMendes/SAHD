@@ -13,7 +13,7 @@ class MovimentacaoDoPaciente : public QDialog
     Q_OBJECT
 
 public:
-    explicit MovimentacaoDoPaciente(QWidget *parent = 0);
+    explicit MovimentacaoDoPaciente(int id, QWidget *parent = 0);
     ~MovimentacaoDoPaciente();
 
 private slots:
@@ -22,8 +22,11 @@ private slots:
 
     void on_comboBox_situacao_activated(const QString &arg1);
 
+    void on_pushButton_confirmar_clicked();
+
 private:
     Ui::MovimentacaoDoPaciente *ui;
+    int id;
 };
 
 #endif // MOVIMENTACAODOPACIENTE_H

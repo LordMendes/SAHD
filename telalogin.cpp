@@ -64,7 +64,7 @@ void TelaLogin::on_pushButton_Entrar_clicked()
                 QMessageBox::StandardButton erro = QMessageBox::information(this, "Cancelar", "Usuário ou Senha incorretos", QMessageBox::Ok);
             }else{
                 qDebug()<<userList[count]["nome"].toString();
-                hemocontrol2 = new hemoControl(count-1, this);
+                hemocontrol2 = new hemoControl(count, this);
                 hemocontrol2->show();
                 hide();
             }

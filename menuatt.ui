@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>454</width>
-    <height>476</height>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -76,13 +76,6 @@ font-weight: bold;</string>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_implanteDeAcesso">
-        <property name="text">
-         <string>Implante de Acesso Vascular</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="pushButton_Hospitalizacao">
         <property name="text">
          <string>Hospitalização</string>
@@ -100,13 +93,6 @@ font-weight: bold;</string>
        <widget class="QPushButton" name="pushButton_exames">
         <property name="text">
          <string>Exames</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_indicadores">
-        <property name="text">
-         <string>Indicadores</string>
         </property>
        </widget>
       </item>

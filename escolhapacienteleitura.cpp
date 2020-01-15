@@ -14,7 +14,7 @@ escolhapacienteleitura::escolhapacienteleitura(QWidget *parent) :
                 | Qt::WindowMaximizeButtonHint);
 
     req Req;
-    QJsonDocument jsonDoc = Req.get("orderedPacientes");
+    QJsonDocument jsonDoc = Req.get("pacientes");
     QJsonDocument qnt = Req.get("countPacientes");
 
     int count = qnt[0]["count(`id`)"].toInt();
@@ -34,7 +34,13 @@ void escolhapacienteleitura::on_pushButton_clicked()
 {
     int id = ui->comboBox->currentIndex();
     hide();
-    LeituraMenu menuatt(id, this);
+    qDebug()<<"id : "<<id;
+    LeituraMenu menuatt(++id, this);
     menuatt.setModal(true);
     menuatt.exec();
+}
+
+void escolhapacienteleitura::on_pushButton_2_clicked()
+{
+    hide();
 }

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>396</width>
-    <height>582</height>
+    <height>502</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,91 +39,77 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <widget class="QPushButton" name="pushButton_2">
+         <widget class="QPushButton" name="infeccao">
           <property name="text">
            <string>Infecção de Acesso Vascular</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_5">
+         <widget class="QPushButton" name="dadosclinicos">
           <property name="text">
            <string>Dados Clínicos</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_7">
+         <widget class="QPushButton" name="eventosadv">
           <property name="text">
            <string>Eventos Adversos</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_10">
+         <widget class="QPushButton" name="movimentacao">
           <property name="text">
            <string>Movimentação de Paciente</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_13">
+         <widget class="QPushButton" name="acessoatual">
           <property name="text">
            <string>Acesso Atual</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_12">
-          <property name="text">
-           <string>Implante de Acesso Vascular</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_11">
+         <widget class="QPushButton" name="hospta">
           <property name="text">
            <string>Hospitalização</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_9">
+         <widget class="QPushButton" name="transfusao">
           <property name="text">
            <string>Transfusão Sanguínea</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_8">
+         <widget class="QPushButton" name="exames">
           <property name="text">
            <string>Exames</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_6">
-          <property name="text">
-           <string>Indicadores</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_4">
+         <widget class="QPushButton" name="controledereuso">
           <property name="text">
            <string>Controle Reuso Dialisadores</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_3">
+         <widget class="QPushButton" name="dadosantro">
           <property name="text">
            <string>Dados Antropométricos</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="sorologia">
           <property name="text">
            <string>Sorologia</string>
           </property>

@@ -13,7 +13,7 @@ class EventosAdversos : public QDialog
     Q_OBJECT
 
 public:
-    explicit EventosAdversos(QWidget *parent = 0);
+    explicit EventosAdversos(int id,QWidget *parent = 0);
     ~EventosAdversos();
 
 private slots:
@@ -31,6 +31,7 @@ private slots:
 
 private:
     Ui::EventosAdversos *ui;
+    int id;
 };
 
 #endif // EVENTOSADVERSOS_H

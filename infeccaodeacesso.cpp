@@ -3,7 +3,7 @@
 #include <QMessageBox>
 #include <QJsonObject>
 
-InfeccaoDeAcesso::InfeccaoDeAcesso(QWidget *parent) :
+InfeccaoDeAcesso::InfeccaoDeAcesso(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::InfeccaoDeAcesso)
 {
@@ -28,7 +28,7 @@ InfeccaoDeAcesso::InfeccaoDeAcesso(QWidget *parent) :
     ui->lineEdit_sensivel3->hide();
     ui->lineEdit_sensivel4->hide();
     ui->lineEdit_sensivel5->hide();
-
+    this->id = id;
 
 }
 
@@ -207,7 +207,7 @@ void InfeccaoDeAcesso::on_pushButton_cancelar_clicked()
 
     QJsonObject object {
         {"dataInfec",data},
-        {"CDL",CDL},
+        {"CDLInfec",CDL},
         {"permicathInfec",permicath},
         {"clpthp",clpthp},
         {"FAV2",FAV},
@@ -311,8 +311,9 @@ void InfeccaoDeAcesso::on_pushButton_cancelar_clicked()
     int a = id2[0]["count(`id`)"].toInt();
     QString s = QString::number(a);
     Req.put(object,"updateConsultas/"+s);
+    Req.put(object,"updateRecente/"+QString::number(id));
     hide();
-
+    qDebug()<<"id: "<<id;
 
 }
 

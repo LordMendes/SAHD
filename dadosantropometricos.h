@@ -13,7 +13,7 @@ class dadosAntropometricos : public QDialog
     Q_OBJECT
 
 public:
-    explicit dadosAntropometricos(QWidget *parent = 0);
+    explicit dadosAntropometricos(int id, QWidget *parent = 0);
     ~dadosAntropometricos();
 
 private slots:
@@ -23,6 +23,7 @@ private slots:
 
 private:
     Ui::dadosAntropometricos *ui;
+    int id;
 };
 
 #endif // DADOSANTROPOMETRICOS_H

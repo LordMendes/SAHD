@@ -13,7 +13,7 @@ class Hospitalizacao : public QDialog
     Q_OBJECT
 
 public:
-    explicit Hospitalizacao(QWidget *parent = 0);
+    explicit Hospitalizacao(int id, QWidget *parent = 0);
     ~Hospitalizacao();
 
 private slots:
@@ -23,6 +23,7 @@ private slots:
 
 private:
     Ui::Hospitalizacao *ui;
+    int id;
 };
 
 #endif // HOSPITALIZACAO_H

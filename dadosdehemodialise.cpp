@@ -2,7 +2,7 @@
 #include "ui_dadosdehemodialise.h"
 #include <QMessageBox>
 
-DadosDeHemodialise::DadosDeHemodialise(QWidget *parent) :
+DadosDeHemodialise::DadosDeHemodialise(int id,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DadosDeHemodialise)
 {
@@ -10,6 +10,7 @@ DadosDeHemodialise::DadosDeHemodialise(QWidget *parent) :
                 | Qt::WindowMinimizeButtonHint
                 | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
+    this->id = id;
 }
 
 DadosDeHemodialise::~DadosDeHemodialise()
@@ -190,6 +191,8 @@ void DadosDeHemodialise::on_pushButton_Confirmar_clicked()
     int a = id2[0]["count(`id`)"].toInt();
     QString s = QString::number(a);
     Req.put(object,"updateConsultas/"+s);
+
+    Req.put(object,"updateRecente/"+QString::number(id));
     hide();
 
 }

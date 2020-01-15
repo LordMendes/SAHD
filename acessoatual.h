@@ -13,7 +13,7 @@ class AcessoAtual : public QDialog
     Q_OBJECT
 
 public:
-    explicit AcessoAtual(QWidget *parent = 0);
+    explicit AcessoAtual(int id, QWidget *parent = 0);
     ~AcessoAtual();
 
 private slots:
@@ -23,6 +23,7 @@ private slots:
 
 private:
     Ui::AcessoAtual *ui;
+    int id;
 };
 
 #endif // ACESSOATUAL_H

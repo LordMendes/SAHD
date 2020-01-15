@@ -44,8 +44,10 @@ private slots:
 
     void on_pushButton_dadosClinicos_clicked();
 
+
 private:
     Ui::MenuAtt *ui;
+    int id;
 };
 
 #endif // MENUATT_H

@@ -13,7 +13,7 @@ class exames : public QDialog
     Q_OBJECT
 
 public:
-    explicit exames(QWidget *parent = nullptr);
+    explicit exames(int id, QWidget *parent = nullptr);
     ~exames();
 
 private slots:
@@ -21,6 +21,7 @@ private slots:
 
 private:
     Ui::exames *ui;
+    int id;
 };
 
 #endif // EXAMES_H

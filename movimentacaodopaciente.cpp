@@ -1,8 +1,10 @@
 #include "movimentacaodopaciente.h"
 #include "ui_movimentacaodopaciente.h"
 #include <QMessageBox>
+#include "req.h"
+#include <QJsonObject>
 
-MovimentacaoDoPaciente::MovimentacaoDoPaciente(QWidget *parent) :
+MovimentacaoDoPaciente::MovimentacaoDoPaciente(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MovimentacaoDoPaciente)
 {
@@ -10,6 +12,7 @@ MovimentacaoDoPaciente::MovimentacaoDoPaciente(QWidget *parent) :
                 | Qt::WindowMinimizeButtonHint
                 | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
+    this->id = id;
     ui->lineEdit_Outros->hide();
 
 }
@@ -36,4 +39,25 @@ void MovimentacaoDoPaciente::on_comboBox_situacao_activated(const QString &arg1)
     }else{
         ui->lineEdit_Outros->hide();
     }
+}
+
+void MovimentacaoDoPaciente::on_pushButton_confirmar_clicked()
+{
+    req Req;
+
+    QString dataMovi = ui->dateEdit->date().toString();
+    QString situacaoMovi = ui->comboBox_situacao->currentText();
+
+    QJsonObject object{
+        {"dataMovi", dataMovi},
+        {"situacaoMovi", situacaoMovi}
+    };
+
+    QJsonDocument id2 = Req.get("countConsultas");
+    int a = id2[0]["count(`id`)"].toInt();
+    QString s = QString::number(a);
+    Req.put(object,"updateConsultas/"+s);
+    Req.put(object,"updateRecente/"+QString::number(id));
+    hide();
+
 }

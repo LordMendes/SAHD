@@ -13,7 +13,7 @@ class InfeccaoDeAcesso : public QDialog
     Q_OBJECT
 
 public:
-    explicit InfeccaoDeAcesso(QWidget *parent = 0);
+    explicit InfeccaoDeAcesso(int id, QWidget *parent = 0);
     ~InfeccaoDeAcesso();
 
 private slots:
@@ -46,6 +46,7 @@ private slots:
 
 private:
     Ui::InfeccaoDeAcesso *ui;
+    int id;
 };
 
 #endif // INFECCAODEACESSO_H

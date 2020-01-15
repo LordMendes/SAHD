@@ -2,7 +2,7 @@
 #include "ui_transfusao.h"
 #include <QMessageBox>
 
-transfusao::transfusao(QWidget *parent) :
+transfusao::transfusao(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::transfusao)
 {
@@ -10,6 +10,7 @@ transfusao::transfusao(QWidget *parent) :
                 | Qt::WindowMinimizeButtonHint
                 | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
+    this->id = id;
 }
 
 transfusao::~transfusao()
@@ -23,4 +24,37 @@ void transfusao::on_pushButton_Cancelar_clicked()
     if(saida == QMessageBox::Yes){
         hide();
     }
+}
+
+void transfusao::on_pushButton_Confirmar_clicked()
+{
+    req Req;
+
+    QString dataTrans = ui->dataTrans->date().toString();
+    QString hemocomponentes = ui->hemocomponentes->currentText();
+    QString hemoderivados = ui->hemoderivados->currentText();
+    QString quantidade = ui->quantidade->text();
+    QString nDaBolsa = ui->nDaBolsa->text();
+    QString grupoSangue = ui->grupoSangue->currentText();
+    QString observacao = ui->observacao->text();
+
+
+    QJsonObject object{
+
+        {"dataTrans",dataTrans},
+        {"hemocomponentes",hemocomponentes},
+        {"hemoderivados",hemoderivados},
+        {"quantidade",quantidade},
+        {"nDaBolsa",nDaBolsa},
+        {"grupoSangue",grupoSangue},
+        {"observacaoTrans",observacao}
+
+    };
+
+    QJsonDocument id2 = Req.get("countConsultas");
+    int a = id2[0]["count(`id`)"].toInt();
+    QString s = QString::number(a);
+    Req.put(object,"updateConsultas/"+s);
+    Req.put(object,"updateRecente/"+QString::number(id));
+    hide();
 }

@@ -20,7 +20,7 @@ void req::post(QJsonObject object, QString rota){
     if(!reply->error()){
         qDebug()<<"POST foi um sucesso!";
     }else{
-        qDebug()<< "erro";
+        qDebug()<< "Erro : "<<reply->errorString();
     }
 }
 
@@ -44,7 +44,7 @@ QJsonDocument req::get(QString rota){
     if(!reply->error()){
         qDebug()<<"GET foi um sucesso!";
     }else{
-        qDebug()<< "erro";
+        qDebug()<< "Erro : "<<reply->error();
     }
 
     return jsonDoc;
@@ -65,7 +65,7 @@ void req::put(QJsonObject object, QString rota){
     if(!reply->error()){
         qDebug()<<"PUT foi um sucesso!";
     }else{
-        qDebug()<< "erro : "<<reply->error();
+        qDebug()<< "Erro : "<<reply->error();
     }
 }
 

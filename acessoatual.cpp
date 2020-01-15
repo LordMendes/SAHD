@@ -12,7 +12,7 @@
 #include <QObject>
 #include <string>
 
-AcessoAtual::AcessoAtual(QWidget *parent) :
+AcessoAtual::AcessoAtual(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AcessoAtual)
 {
@@ -20,6 +20,7 @@ AcessoAtual::AcessoAtual(QWidget *parent) :
         | Qt::WindowMinimizeButtonHint
         | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
+    this->id=id;
 }
 
 AcessoAtual::~AcessoAtual()
@@ -67,15 +68,16 @@ void AcessoAtual::on_pushButton_Confirmar_clicked()
         {"cateterDLPTHP", cateterDLPTHP},
         {"fistula", fistula},
         {"protese", protese}
-        //{"paciente_id", 4}
 
     };
 
     int a = id2[0]["count(`id`)"].toInt();
     QString s = QString::number(a);
-    qDebug()<<s;
-
-    Req.put(object,"updateConsultas/"+s);
+    qDebug()<<"put consultas";
+    Req.put(object,"updateConsultas/"+QString::number(a));
+    qDebug()<<"put recente";
+    Req.put(object,"updateRecente/"+QString::number(id));
     hide();
+    qDebug()<<"id : "<<id;
 
 }

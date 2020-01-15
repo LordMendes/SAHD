@@ -3,7 +3,7 @@
 #include <QMessageBox>
 #include "telalogin.h"
 
-exames::exames(QWidget *parent) :
+exames::exames(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::exames)
 {
@@ -11,6 +11,7 @@ exames::exames(QWidget *parent) :
                 | Qt::WindowMinimizeButtonHint
                 | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
+    this->id=id;
 }
 
 exames::~exames()

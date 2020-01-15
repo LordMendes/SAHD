@@ -2,28 +2,21 @@
 #define CONTROLEDEREUSO_H
 
 #include <QDialog>
-#include <QMainWindow>
-#include "req.h"
 
 namespace Ui {
-class ControleDeReuso;
+class controledereuso;
 }
 
-class ControleDeReuso : public QDialog
+class controledereuso : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ControleDeReuso(QWidget *parent = nullptr);
-    ~ControleDeReuso();
-
-private slots:
-    void on_pushButton_2_clicked();
-
-    void on_pushButton_confirmar_clicked();
+    explicit controledereuso(QWidget *parent = nullptr);
+    ~controledereuso();
 
 private:
-    Ui::ControleDeReuso *ui;
+    Ui::controledereuso *ui;
 };
 
 #endif // CONTROLEDEREUSO_H

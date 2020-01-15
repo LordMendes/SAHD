@@ -16,10 +16,23 @@ public:
     ~LeituraMenu();
 
 private slots:
-    void on_pushButton_3_clicked();
+    void on_infeccao_clicked();
+
+    void on_pushButton_14_clicked();
+
+    void on_dadosclinicos_clicked();
+
+    void on_eventosadv_clicked();
+
+    void on_movimentacao_clicked();
+
+    void on_acessoatual_clicked();
+
+    void on_hospta_clicked();
 
 private:
     Ui::LeituraMenu *ui;
+    int id;
 };
 
 #endif // LEITURAMENU_H

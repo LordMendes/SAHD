@@ -39,7 +39,7 @@
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="1" column="5">
-     <widget class="QComboBox" name="comboBox_GrupoSanguineoDaBolsa">
+     <widget class="QComboBox" name="grupoSangue">
       <item>
        <property name="text">
         <string/>
@@ -98,13 +98,13 @@
      </widget>
     </item>
     <item row="1" column="4">
-     <widget class="QLineEdit" name="lineEdit_NumeroDaBolsa"/>
+     <widget class="QLineEdit" name="nDaBolsa"/>
     </item>
     <item row="1" column="6">
-     <widget class="QLineEdit" name="lineEdit_Observacao"/>
+     <widget class="QLineEdit" name="observacao"/>
     </item>
     <item row="1" column="1">
-     <widget class="QComboBox" name="comboBox_Hemocomponentes">
+     <widget class="QComboBox" name="hemocomponentes">
       <item>
        <property name="text">
         <string/>
@@ -178,7 +178,7 @@
      </widget>
     </item>
     <item row="1" column="3">
-     <widget class="QLineEdit" name="lineEdit_Quantidade"/>
+     <widget class="QLineEdit" name="quantidade"/>
     </item>
     <item row="0" column="1">
      <widget class="QLabel" name="label_4">
@@ -211,7 +211,7 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QDateEdit" name="dateEdit_Data"/>
+     <widget class="QDateEdit" name="dataTrans"/>
     </item>
     <item row="0" column="2">
      <widget class="QLabel" name="label_7">
@@ -221,7 +221,7 @@
      </widget>
     </item>
     <item row="1" column="2">
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="hemoderivados">
       <item>
        <property name="text">
         <string/>

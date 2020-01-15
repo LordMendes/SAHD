@@ -14,8 +14,8 @@ EscolhaPacienteAtt::EscolhaPacienteAtt(int user, QWidget *parent) :
     ui->setupUi(this);
     this->user = user;
     req Req;
-    QJsonDocument jsonDoc = Req.get("orderedUsers");
-    QJsonDocument qnt = Req.get("countUsers");
+    QJsonDocument jsonDoc = Req.get("pacientes");
+    QJsonDocument qnt = Req.get("countPacientes");
 
     int count = qnt[0]["count(`id`)"].toInt();
     qDebug()<<qnt;
@@ -33,19 +33,21 @@ EscolhaPacienteAtt::~EscolhaPacienteAtt()
 
 void EscolhaPacienteAtt::on_pushButton_Avancar_clicked()
 {
+    req Req;
     id = ui->comboBox_listaPaciente->currentIndex();
+    QJsonDocument asd = Req.get("pacientes");
+    //id = asd[id][""]
     QJsonObject obj{
         {"paciente_id", id},
         {"usuario_id", user}
     };
     qDebug()<<"pac : "<<id;
     qDebug()<<"user : "<<user;
-    req Req;
     Req.post(obj,"createConsulta");
 
 
     hide();
-    MenuAtt menuatt(id, this);
+    MenuAtt menuatt(++id, this);
 
     menuatt.setModal(true);
     menuatt.exec();

@@ -2,7 +2,7 @@
 #include "ui_dadosantropometricos.h"
 #include <string>
 
-dadosAntropometricos::dadosAntropometricos(QWidget *parent) :
+dadosAntropometricos::dadosAntropometricos(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::dadosAntropometricos)
 {
@@ -10,7 +10,7 @@ dadosAntropometricos::dadosAntropometricos(QWidget *parent) :
                 | Qt::WindowMinimizeButtonHint
                 | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
-
+    this->id = id;
 
 }
 
@@ -45,6 +45,8 @@ void dadosAntropometricos::on_pushButton_clicked()
     int a = id2[0]["count(`id`)"].toInt();
     QString s = QString::number(a);
     Req.put(object,"updateConsultas/"+s);
+
+    Req.put(object,"updateRecente/"+QString::number(id));
     hide();
 }
 
