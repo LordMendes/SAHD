@@ -13,7 +13,7 @@ class Sorologia : public QDialog
     Q_OBJECT
 
 public:
-    explicit Sorologia(QWidget *parent = 0);
+    explicit Sorologia(int id, QWidget *parent = 0);
     ~Sorologia();
 
 private slots:
@@ -31,8 +31,12 @@ private slots:
 
     void on_checkBox_AntiHbe_stateChanged(int arg1);
 
+    void on_pushButton_Confirmar_clicked();
+
 private:
     Ui::Sorologia *ui;
+
+    int id;
 };
 
 #endif // SOROLOGIA_H

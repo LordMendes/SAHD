@@ -5,6 +5,9 @@ eventosadversos_leitura::eventosadversos_leitura(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::eventosadversos_leitura)
 {
+    setWindowFlags(Qt::Window
+                | Qt::WindowMinimizeButtonHint
+                | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 
     req Req;
@@ -25,4 +28,9 @@ eventosadversos_leitura::eventosadversos_leitura(int id, QWidget *parent) :
 eventosadversos_leitura::~eventosadversos_leitura()
 {
     delete ui;
+}
+
+void eventosadversos_leitura::on_pushButton_voltar_clicked()
+{
+    hide();
 }

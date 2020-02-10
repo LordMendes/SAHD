@@ -15,6 +15,9 @@ public:
     explicit hospitalizacao_leitura(int id, QWidget *parent = nullptr);
     ~hospitalizacao_leitura();
 
+private slots:
+    void on_pushButton_voltar_clicked();
+
 private:
     Ui::hospitalizacao_leitura *ui;
     int id;

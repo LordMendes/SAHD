@@ -6,6 +6,9 @@ hospitalizacao_leitura::hospitalizacao_leitura(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::hospitalizacao_leitura)
 {
+    setWindowFlags(Qt::Window
+        | Qt::WindowMinimizeButtonHint
+        | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
     req Req;
     QJsonDocument obj = Req.get("recentes");
@@ -22,4 +25,9 @@ hospitalizacao_leitura::hospitalizacao_leitura(int id, QWidget *parent) :
 hospitalizacao_leitura::~hospitalizacao_leitura()
 {
     delete ui;
+}
+
+void hospitalizacao_leitura::on_pushButton_voltar_clicked()
+{
+    hide();
 }

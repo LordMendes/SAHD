@@ -15,6 +15,9 @@ public:
     explicit eventosadversos_leitura(int id, QWidget *parent = nullptr);
     ~eventosadversos_leitura();
 
+private slots:
+    void on_pushButton_voltar_clicked();
+
 private:
     Ui::eventosadversos_leitura *ui;
     int id;

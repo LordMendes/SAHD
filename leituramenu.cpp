@@ -9,11 +9,18 @@
 #include "eventosadversos_leitura.h"
 #include "movimentacaodopaciente_leitura.h"
 #include "hospitalizacao_leitura.h"
+#include "controledereuso_leitura.h"
+#include "exames_leitura.h"
+#include "transfusao_leitura.h"
+#include "sorologia_leitura.h"
 
 LeituraMenu::LeituraMenu(int id, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::LeituraMenu)
 {
+    setWindowFlags(Qt::Window
+                    | Qt::WindowMinimizeButtonHint
+                    | Qt::WindowMaximizeButtonHint);
     req Req;
     QJsonDocument obj = Req.get("orderedPacientes");
     ui->setupUi(this);
@@ -41,7 +48,7 @@ void LeituraMenu::on_pushButton_14_clicked()
 
 void LeituraMenu::on_dadosclinicos_clicked()
 {
-    dadosantropometricos_leitura dados(this->id);
+    dadoshemodialise_leitura dados(this->id);
     dados.setModal(true);
     dados.exec();
 }
@@ -70,6 +77,41 @@ void LeituraMenu::on_acessoatual_clicked()
 void LeituraMenu::on_hospta_clicked()
 {
     hospitalizacao_leitura a(this->id);
+    a.setModal(true);
+    a.exec();
+}
+
+void LeituraMenu::on_controledereuso_clicked()
+{
+    controledereuso_leitura a(this->id);
+    a.setModal(true);
+    a.exec();
+}
+
+void LeituraMenu::on_exames_clicked()
+{
+    exames_leitura a(this->id);
+    a.setModal(true);
+    a.exec();
+}
+
+void LeituraMenu::on_transfusao_clicked()
+{
+    transfusao_leitura a(this->id);
+    a.setModal(true);
+    a.exec();
+}
+
+void LeituraMenu::on_dadosantro_clicked()
+{
+    dadosantropometricos_leitura a(this->id);
+    a.setModal(true);
+    a.exec();
+}
+
+void LeituraMenu::on_sorologia_clicked()
+{
+    sorologia_leitura a(this->id);
     a.setModal(true);
     a.exec();
 }

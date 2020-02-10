@@ -45,7 +45,6 @@ void dadosAntropometricos::on_pushButton_clicked()
     int a = id2[0]["count(`id`)"].toInt();
     QString s = QString::number(a);
     Req.put(object,"updateConsultas/"+s);
-
     Req.put(object,"updateRecente/"+QString::number(id));
     hide();
 }

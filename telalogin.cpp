@@ -23,10 +23,7 @@ TelaLogin::TelaLogin(QWidget *parent) :
     QPixmap logo(":/logo/Resources/logoRim.png");
     ui->label_logo->setPixmap(logo.scaled(300,175,Qt::KeepAspectRatio));
 
-    req Req;
 
-    userList =  Req.get("users");
-    userCount = Req.get("countUsers");
 
 }
 
@@ -37,6 +34,10 @@ TelaLogin::~TelaLogin()
 
 void TelaLogin::on_pushButton_Entrar_clicked()
 {
+        req Req;
+
+        userList =  Req.get("users");
+        userCount = Req.get("countUsers");
 
         int user = userCount[0]["count(`id`)"].toInt();
         qDebug()<<"c:"<<userCount[0]["count(`id`)"].toInt();

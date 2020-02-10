@@ -154,6 +154,7 @@ void Cadastro::on_BotaoConfirmarCadastro_clicked()
     qDebug()<<"Criando recente: ";
     Req.post(nulo,"createRecente");
 
+    hide();
 
 }
 

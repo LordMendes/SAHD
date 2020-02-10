@@ -30,6 +30,16 @@ private slots:
 
     void on_hospta_clicked();
 
+    void on_controledereuso_clicked();
+
+    void on_exames_clicked();
+
+    void on_transfusao_clicked();
+
+    void on_dadosantro_clicked();
+
+    void on_sorologia_clicked();
+
 private:
     Ui::LeituraMenu *ui;
     int id;

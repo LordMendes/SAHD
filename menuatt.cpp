@@ -53,7 +53,7 @@ void MenuAtt::on_pushButton_dadosAntropometricos_clicked()
 
 void MenuAtt::on_pushButton_sorologia_clicked()
 {
-    Sorologia sorologia;
+    Sorologia sorologia(this->id);
     sorologia.setModal(true);
     sorologia.exec();
 }
@@ -103,7 +103,7 @@ void MenuAtt::on_pushButton_transfusaoSanguinea_clicked()
 
 void MenuAtt::on_pushButton_controleReusoDialisadores_clicked()
 {
-    ControleDeReuso controle(id);
+    controledereuso controle(id);
     controle.setModal(true);
     controle.exec();
 }

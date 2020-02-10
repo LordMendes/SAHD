@@ -13,13 +13,8 @@ acessoatual_leitura::acessoatual_leitura(int id, QWidget *parent) :
     req Req;
     QJsonDocument obj = Req.get("recentes");
     QJsonDocument counts = Req.get("countPacientes");
-    int limit = counts[0]["count(`id`)"].toInt();
-    int i;
-    for(i=0 ; i < limit;i++){
-        if(i==this->id)
-            break;
-    }
-    i-=2;
+    int i = id;
+
     qDebug()<<"i: "<<i;
     ui->cateterduplolumen->setText(obj[i]["cateterDL"].toString());
     ui->cateterdelongapermanencia->setText(obj[i]["cateterDLP"].toString());

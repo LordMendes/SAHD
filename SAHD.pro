@@ -31,6 +31,7 @@ SOURCES += \
         cadastro_leitura.cpp \
         cadastrouser.cpp \
         controledereuso.cpp \
+        controledereuso_leitura.cpp \
         dadosantropometricos.cpp \
         dadosantropometricos_leitura.cpp \
         dadosdehemodialise.cpp \
@@ -40,6 +41,7 @@ SOURCES += \
         eventosadversos.cpp \
         eventosadversos_leitura.cpp \
         exames.cpp \
+        exames_leitura.cpp \
         getid.cpp \
         hemocontrol.cpp \
         hospitalizacao.cpp \
@@ -55,6 +57,7 @@ SOURCES += \
         movimentacaodopaciente_leitura.cpp \
         req.cpp \
         sorologia.cpp \
+        sorologia_leitura.cpp \
         telalogin.cpp \
         transfusao.cpp \
         transfusao_leitura.cpp
@@ -66,6 +69,7 @@ HEADERS += \
     cadastro_leitura.h \
     cadastrouser.h \
     controledereuso.h \
+    controledereuso_leitura.h \
     dadosantropometricos.h \
     dadosantropometricos_leitura.h \
     dadosdehemodialise.h \
@@ -75,6 +79,7 @@ HEADERS += \
     eventosadversos.h \
     eventosadversos_leitura.h \
     exames.h \
+    exames_leitura.h \
     getid.h \
     hemocontrol.h \
     hospitalizacao.h \
@@ -89,6 +94,7 @@ HEADERS += \
     movimentacaodopaciente_leitura.h \
     req.h \
     sorologia.h \
+    sorologia_leitura.h \
     telalogin.h \
     transfusao.h \
     transfusao_leitura.h
@@ -100,6 +106,7 @@ FORMS += \
     cadastro_leitura.ui \
     cadastrouser.ui \
     controledereuso.ui \
+    controledereuso_leitura.ui \
     dadosantropometricos.ui \
     dadosantropometricos_leitura.ui \
     dadosdehemodialise.ui \
@@ -109,6 +116,7 @@ FORMS += \
     eventosadversos.ui \
     eventosadversos_leitura.ui \
     exames.ui \
+    exames_leitura.ui \
     hemocontrol.ui \
     hospitalizacao.ui \
     hospitalizacao_leitura.ui \
@@ -121,6 +129,7 @@ FORMS += \
     movimentacaodopaciente.ui \
     movimentacaodopaciente_leitura.ui \
     sorologia.ui \
+    sorologia_leitura.ui \
     telalogin.ui \
     transfusao.ui \
     transfusao_leitura.ui

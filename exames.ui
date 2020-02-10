@@ -30,10 +30,10 @@
       </widget>
      </item>
      <item row="0" column="3">
-      <widget class="QDateEdit" name="dateEdit"/>
+      <widget class="QDateEdit" name="d1"/>
      </item>
      <item row="6" column="7">
-      <widget class="QDateEdit" name="dateEdit_10"/>
+      <widget class="QDateEdit" name="dktv"/>
      </item>
      <item row="1" column="2">
       <widget class="QLabel" name="label_12">
@@ -58,7 +58,7 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QDateEdit" name="dateEdit_7"/>
+        <widget class="QDateEdit" name="sd1"/>
        </item>
        <item row="0" column="0">
         <widget class="QLabel" name="label_27">
@@ -68,10 +68,10 @@
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QDateEdit" name="dateEdit_15"/>
+        <widget class="QDateEdit" name="sd2"/>
        </item>
        <item row="3" column="0">
-        <widget class="QDateEdit" name="dateEdit_16"/>
+        <widget class="QDateEdit" name="sd3"/>
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="label_28">
@@ -88,51 +88,48 @@
         </widget>
        </item>
        <item row="4" column="0">
-        <widget class="QDateEdit" name="dateEdit_20"/>
+        <widget class="QDateEdit" name="sd4"/>
        </item>
        <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit_25"/>
+        <widget class="QLineEdit" name="se1"/>
        </item>
        <item row="1" column="2">
-        <widget class="QLineEdit" name="lineEdit_26"/>
+        <widget class="QLineEdit" name="sr1"/>
        </item>
        <item row="1" column="3">
-        <widget class="QLineEdit" name="lineEdit_27"/>
+        <widget class="QLineEdit" name="su1"/>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit_28"/>
+        <widget class="QLineEdit" name="se2"/>
        </item>
        <item row="2" column="2">
-        <widget class="QLineEdit" name="lineEdit_29"/>
+        <widget class="QLineEdit" name="sr2"/>
        </item>
        <item row="2" column="3">
-        <widget class="QLineEdit" name="lineEdit_30"/>
+        <widget class="QLineEdit" name="su2"/>
        </item>
        <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit_31"/>
+        <widget class="QLineEdit" name="se3"/>
        </item>
        <item row="3" column="2">
-        <widget class="QLineEdit" name="lineEdit_32"/>
+        <widget class="QLineEdit" name="sr3"/>
        </item>
        <item row="3" column="3">
-        <widget class="QLineEdit" name="lineEdit_33"/>
+        <widget class="QLineEdit" name="su3"/>
        </item>
        <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit_34"/>
+        <widget class="QLineEdit" name="se4"/>
        </item>
        <item row="4" column="2">
-        <widget class="QLineEdit" name="lineEdit_35"/>
+        <widget class="QLineEdit" name="sr4"/>
        </item>
        <item row="4" column="3">
-        <widget class="QLineEdit" name="lineEdit_36"/>
+        <widget class="QLineEdit" name="su4"/>
        </item>
       </layout>
      </item>
-     <item row="5" column="1">
-      <widget class="QLineEdit" name="lineEdit_42"/>
-     </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="lineEdit_38"/>
+      <widget class="QLineEdit" name="t2"/>
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_3">
@@ -142,7 +139,7 @@
       </widget>
      </item>
      <item row="2" column="3">
-      <widget class="QDateEdit" name="dateEdit_3"/>
+      <widget class="QDateEdit" name="d3"/>
      </item>
      <item row="0" column="2">
       <widget class="QLabel" name="label_11">
@@ -165,7 +162,7 @@
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QLineEdit" name="lineEdit_41"/>
+      <widget class="QLineEdit" name="t5"/>
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_4">
@@ -175,7 +172,7 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QLineEdit" name="lineEdit_40"/>
+      <widget class="QLineEdit" name="t4"/>
      </item>
      <item row="3" column="2">
       <widget class="QLabel" name="label_14">
@@ -190,9 +187,6 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="3">
-      <widget class="QLineEdit" name="lineEdit_49"/>
-     </item>
      <item row="8" column="0" colspan="4">
       <layout class="QGridLayout" name="gridLayout_3">
        <item row="0" column="1">
@@ -206,7 +200,7 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QDateEdit" name="dateEdit_6"/>
+        <widget class="QDateEdit" name="td1"/>
        </item>
        <item row="0" column="3">
         <widget class="QLabel" name="label_26">
@@ -239,88 +233,62 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit_13"/>
+        <widget class="QLineEdit" name="te1"/>
        </item>
        <item row="1" column="2">
-        <widget class="QLineEdit" name="lineEdit_14"/>
+        <widget class="QLineEdit" name="tr1"/>
        </item>
        <item row="1" column="3">
-        <widget class="QLineEdit" name="lineEdit_15"/>
+        <widget class="QLineEdit" name="tu1"/>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit_16"/>
+        <widget class="QLineEdit" name="te2"/>
        </item>
        <item row="2" column="2">
-        <widget class="QLineEdit" name="lineEdit_17"/>
+        <widget class="QLineEdit" name="tr2"/>
        </item>
        <item row="2" column="3">
-        <widget class="QLineEdit" name="lineEdit_18"/>
+        <widget class="QLineEdit" name="tu2"/>
        </item>
        <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit_19"/>
+        <widget class="QLineEdit" name="te3"/>
        </item>
        <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit_20"/>
+        <widget class="QLineEdit" name="te4"/>
        </item>
        <item row="3" column="2">
-        <widget class="QLineEdit" name="lineEdit_21"/>
+        <widget class="QLineEdit" name="tr3"/>
        </item>
        <item row="3" column="3">
-        <widget class="QLineEdit" name="lineEdit_22"/>
+        <widget class="QLineEdit" name="tu3"/>
        </item>
        <item row="4" column="2">
-        <widget class="QLineEdit" name="lineEdit_23"/>
+        <widget class="QLineEdit" name="tr4"/>
        </item>
        <item row="4" column="3">
-        <widget class="QLineEdit" name="lineEdit_24"/>
+        <widget class="QLineEdit" name="tu4"/>
        </item>
        <item row="2" column="0">
-        <widget class="QDateEdit" name="dateEdit_17"/>
+        <widget class="QDateEdit" name="td2"/>
        </item>
        <item row="3" column="0">
-        <widget class="QDateEdit" name="dateEdit_18"/>
+        <widget class="QDateEdit" name="td3"/>
        </item>
        <item row="4" column="0">
-        <widget class="QDateEdit" name="dateEdit_19"/>
+        <widget class="QDateEdit" name="td4"/>
        </item>
       </layout>
      </item>
      <item row="1" column="4" rowspan="5" colspan="4">
       <layout class="QGridLayout" name="gridLayout_5">
-       <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit_43"/>
-       </item>
-       <item row="2" column="0">
-        <widget class="QDateEdit" name="dateEdit_22"/>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="label_33">
-         <property name="text">
-          <string>Resultado</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLineEdit" name="lineEdit_47"/>
-       </item>
-       <item row="1" column="0">
-        <widget class="QDateEdit" name="dateEdit_21"/>
-       </item>
        <item row="3" column="0">
-        <widget class="QDateEdit" name="dateEdit_24"/>
+        <widget class="QDateEdit" name="ad3"/>
        </item>
-       <item row="1" column="2">
-        <widget class="QLineEdit" name="lineEdit_44"/>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="ae4"/>
        </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_31">
-         <property name="text">
-          <string>Data</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QLineEdit" name="lineEdit_48"/>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="au1"/>
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="label_32">
@@ -329,6 +297,56 @@
          </property>
         </widget>
        </item>
+       <item row="4" column="3">
+        <widget class="QLineEdit" name="au4"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="ar2"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="au2"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="ae1"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="ae3"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_33">
+         <property name="text">
+          <string>Resultado</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_31">
+         <property name="text">
+          <string>Data</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QDateEdit" name="ad4"/>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLineEdit" name="au3"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="ar1"/>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="ar4"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QDateEdit" name="ad1"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="ar3"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QDateEdit" name="ad2"/>
+       </item>
        <item row="0" column="3">
         <widget class="QLabel" name="label_34">
          <property name="text">
@@ -336,39 +354,15 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="3">
-        <widget class="QLineEdit" name="lineEdit_45"/>
-       </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit_46"/>
-       </item>
-       <item row="4" column="0">
-        <widget class="QDateEdit" name="dateEdit_23"/>
-       </item>
-       <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit_50"/>
-       </item>
-       <item row="3" column="2">
-        <widget class="QLineEdit" name="lineEdit_51"/>
-       </item>
-       <item row="3" column="3">
-        <widget class="QLineEdit" name="lineEdit_52"/>
-       </item>
-       <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit_53"/>
-       </item>
-       <item row="4" column="2">
-        <widget class="QLineEdit" name="lineEdit_54"/>
-       </item>
-       <item row="4" column="3">
-        <widget class="QLineEdit" name="lineEdit_55"/>
+        <widget class="QLineEdit" name="ae2"/>
        </item>
       </layout>
      </item>
      <item row="6" column="0" colspan="4">
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="1" column="0">
-        <widget class="QDateEdit" name="dateEdit_11"/>
+        <widget class="QDateEdit" name="md1"/>
        </item>
        <item row="0" column="0">
         <widget class="QLabel" name="label_21">
@@ -381,7 +375,7 @@
         </widget>
        </item>
        <item row="3" column="0">
-        <widget class="QDateEdit" name="dateEdit_13"/>
+        <widget class="QDateEdit" name="md3"/>
        </item>
        <item row="0" column="3">
         <widget class="QLabel" name="label_24">
@@ -414,46 +408,46 @@
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QDateEdit" name="dateEdit_12"/>
+        <widget class="QDateEdit" name="md2"/>
        </item>
        <item row="4" column="0">
-        <widget class="QDateEdit" name="dateEdit_14"/>
+        <widget class="QDateEdit" name="md4"/>
        </item>
        <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="me1"/>
        </item>
        <item row="1" column="2">
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="mr1"/>
        </item>
        <item row="1" column="3">
-        <widget class="QLineEdit" name="lineEdit_3"/>
+        <widget class="QLineEdit" name="mu1"/>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit_4"/>
+        <widget class="QLineEdit" name="me2"/>
        </item>
        <item row="2" column="2">
-        <widget class="QLineEdit" name="lineEdit_5"/>
+        <widget class="QLineEdit" name="mr2"/>
        </item>
        <item row="2" column="3">
-        <widget class="QLineEdit" name="lineEdit_6"/>
+        <widget class="QLineEdit" name="mu2"/>
        </item>
        <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit_7"/>
+        <widget class="QLineEdit" name="me3"/>
        </item>
        <item row="3" column="2">
-        <widget class="QLineEdit" name="lineEdit_8"/>
+        <widget class="QLineEdit" name="mr3"/>
        </item>
        <item row="3" column="3">
-        <widget class="QLineEdit" name="lineEdit_9"/>
+        <widget class="QLineEdit" name="mu3"/>
        </item>
        <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit_10"/>
+        <widget class="QLineEdit" name="me4"/>
        </item>
        <item row="4" column="2">
-        <widget class="QLineEdit" name="lineEdit_11"/>
+        <widget class="QLineEdit" name="mr4"/>
        </item>
        <item row="4" column="3">
-        <widget class="QLineEdit" name="lineEdit_12"/>
+        <widget class="QLineEdit" name="mu4"/>
        </item>
       </layout>
      </item>
@@ -472,7 +466,7 @@
       </widget>
      </item>
      <item row="1" column="3">
-      <widget class="QDateEdit" name="dateEdit_2"/>
+      <widget class="QDateEdit" name="d2"/>
      </item>
      <item row="4" column="2">
       <widget class="QLabel" name="label_15">
@@ -488,7 +482,7 @@
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="lineEdit_39"/>
+      <widget class="QLineEdit" name="t3"/>
      </item>
      <item row="6" column="6">
       <widget class="QLabel" name="label_20">
@@ -504,7 +498,7 @@
       </widget>
      </item>
      <item row="4" column="3">
-      <widget class="QDateEdit" name="dateEdit_5"/>
+      <widget class="QDateEdit" name="d5"/>
      </item>
      <item row="9" column="0">
       <widget class="QLabel" name="label_8">
@@ -535,7 +529,7 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit_37"/>
+      <widget class="QLineEdit" name="t1"/>
      </item>
      <item row="7" column="0">
       <widget class="QLabel" name="label_7">
@@ -545,10 +539,10 @@
       </widget>
      </item>
      <item row="3" column="3">
-      <widget class="QDateEdit" name="dateEdit_4"/>
+      <widget class="QDateEdit" name="d4"/>
      </item>
      <item row="6" column="5">
-      <widget class="QLineEdit" name="lineEdit_56"/>
+      <widget class="QLineEdit" name="ktv"/>
      </item>
     </layout>
    </item>
