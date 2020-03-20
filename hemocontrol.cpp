@@ -25,12 +25,12 @@ hemoControl::hemoControl(int user, QWidget *parent) :
     ui->label_logoMenu->setPixmap(logo.scaled(300,175,Qt::KeepAspectRatio));
 
 
-    this->setUser(user);
+    this->user = user;
 
     req Req;
 
-    users = Req.get("orderedUsers");
-
+    users = Req.get("users");
+    qDebug()<<"user :"<<user;
     ui->label->setText(users[user]["nome"].toString());
 
 

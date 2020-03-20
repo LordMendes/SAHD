@@ -23,7 +23,10 @@ TelaLogin::TelaLogin(QWidget *parent) :
     QPixmap logo(":/logo/Resources/logoRim.png");
     ui->label_logo->setPixmap(logo.scaled(300,175,Qt::KeepAspectRatio));
 
+    req Req;
 
+    userList =  Req.get("users");
+    userCount = Req.get("countUsers");
 
 }
 
@@ -34,10 +37,7 @@ TelaLogin::~TelaLogin()
 
 void TelaLogin::on_pushButton_Entrar_clicked()
 {
-        req Req;
 
-        userList =  Req.get("users");
-        userCount = Req.get("countUsers");
 
         int user = userCount[0]["count(`id`)"].toInt();
         qDebug()<<"c:"<<userCount[0]["count(`id`)"].toInt();
@@ -50,10 +50,7 @@ void TelaLogin::on_pushButton_Entrar_clicked()
 
         }else{
             for(int i = 0 ; i < user; i++){
-                qDebug()<<userList[i]["registro_sahd"];
-                qDebug()<<userList[i]["senha"].toString();
-                qDebug()<<reg;
-                qDebug()<<pass;
+
                 if((userList[i]["registro_sahd"].toString() == reg)&&(userList[i]["senha"].toString() == pass)){
                     break;
                 }
